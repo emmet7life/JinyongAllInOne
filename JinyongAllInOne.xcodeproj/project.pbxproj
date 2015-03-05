@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B36D25E51AA7F1ED00EB0424 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B36D25E41AA7F1ED00EB0424 /* main.m */; };
+		B36D25E81AA7F1ED00EB0424 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B36D25E71AA7F1ED00EB0424 /* AppDelegate.m */; };
+		B36D25EB1AA7F1ED00EB0424 /* JinyongAllInOne.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B36D25E91AA7F1ED00EB0424 /* JinyongAllInOne.xcdatamodeld */; };
+		B36D25EE1AA7F1ED00EB0424 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36D25ED1AA7F1ED00EB0424 /* ViewController.m */; };
+		B36D25F11AA7F1ED00EB0424 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B36D25EF1AA7F1ED00EB0424 /* Main.storyboard */; };
+		B36D25F31AA7F1ED00EB0424 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B36D25F21AA7F1ED00EB0424 /* Images.xcassets */; };
+		B36D25F61AA7F1ED00EB0424 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B36D25F41AA7F1ED00EB0424 /* LaunchScreen.xib */; };
+		B36D26021AA7F1EE00EB0424 /* JinyongAllInOneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B36D26011AA7F1EE00EB0424 /* JinyongAllInOneTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B36D25FC1AA7F1ED00EB0424 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B36D25D71AA7F1ED00EB0424 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B36D25DE1AA7F1ED00EB0424;
+			remoteInfo = JinyongAllInOne;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B36D25DF1AA7F1ED00EB0424 /* JinyongAllInOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JinyongAllInOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B36D25E31AA7F1ED00EB0424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B36D25E41AA7F1ED00EB0424 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B36D25E61AA7F1ED00EB0424 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B36D25E71AA7F1ED00EB0424 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B36D25EA1AA7F1ED00EB0424 /* JinyongAllInOne.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JinyongAllInOne.xcdatamodel; sourceTree = "<group>"; };
+		B36D25EC1AA7F1ED00EB0424 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B36D25ED1AA7F1ED00EB0424 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B36D25F01AA7F1ED00EB0424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B36D25F21AA7F1ED00EB0424 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B36D25F51AA7F1ED00EB0424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B36D25FB1AA7F1ED00EB0424 /* JinyongAllInOneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JinyongAllInOneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B36D26001AA7F1EE00EB0424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B36D26011AA7F1EE00EB0424 /* JinyongAllInOneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JinyongAllInOneTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B36D25DC1AA7F1ED00EB0424 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B36D25F81AA7F1ED00EB0424 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B36D25D61AA7F1ED00EB0424 = {
+			isa = PBXGroup;
+			children = (
+				B36D25E11AA7F1ED00EB0424 /* JinyongAllInOne */,
+				B36D25FE1AA7F1EE00EB0424 /* JinyongAllInOneTests */,
+				B36D25E01AA7F1ED00EB0424 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B36D25E01AA7F1ED00EB0424 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B36D25DF1AA7F1ED00EB0424 /* JinyongAllInOne.app */,
+				B36D25FB1AA7F1ED00EB0424 /* JinyongAllInOneTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B36D25E11AA7F1ED00EB0424 /* JinyongAllInOne */ = {
+			isa = PBXGroup;
+			children = (
+				B36D25E61AA7F1ED00EB0424 /* AppDelegate.h */,
+				B36D25E71AA7F1ED00EB0424 /* AppDelegate.m */,
+				B36D25EC1AA7F1ED00EB0424 /* ViewController.h */,
+				B36D25ED1AA7F1ED00EB0424 /* ViewController.m */,
+				B36D25EF1AA7F1ED00EB0424 /* Main.storyboard */,
+				B36D25F21AA7F1ED00EB0424 /* Images.xcassets */,
+				B36D25F41AA7F1ED00EB0424 /* LaunchScreen.xib */,
+				B36D25E91AA7F1ED00EB0424 /* JinyongAllInOne.xcdatamodeld */,
+				B36D25E21AA7F1ED00EB0424 /* Supporting Files */,
+			);
+			path = JinyongAllInOne;
+			sourceTree = "<group>";
+		};
+		B36D25E21AA7F1ED00EB0424 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B36D25E31AA7F1ED00EB0424 /* Info.plist */,
+				B36D25E41AA7F1ED00EB0424 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B36D25FE1AA7F1EE00EB0424 /* JinyongAllInOneTests */ = {
+			isa = PBXGroup;
+			children = (
+				B36D26011AA7F1EE00EB0424 /* JinyongAllInOneTests.m */,
+				B36D25FF1AA7F1EE00EB0424 /* Supporting Files */,
+			);
+			path = JinyongAllInOneTests;
+			sourceTree = "<group>";
+		};
+		B36D25FF1AA7F1EE00EB0424 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B36D26001AA7F1EE00EB0424 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B36D25DE1AA7F1ED00EB0424 /* JinyongAllInOne */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B36D26051AA7F1EE00EB0424 /* Build configuration list for PBXNativeTarget "JinyongAllInOne" */;
+			buildPhases = (
+				B36D25DB1AA7F1ED00EB0424 /* Sources */,
+				B36D25DC1AA7F1ED00EB0424 /* Frameworks */,
+				B36D25DD1AA7F1ED00EB0424 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JinyongAllInOne;
+			productName = JinyongAllInOne;
+			productReference = B36D25DF1AA7F1ED00EB0424 /* JinyongAllInOne.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B36D25FA1AA7F1ED00EB0424 /* JinyongAllInOneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B36D26081AA7F1EE00EB0424 /* Build configuration list for PBXNativeTarget "JinyongAllInOneTests" */;
+			buildPhases = (
+				B36D25F71AA7F1ED00EB0424 /* Sources */,
+				B36D25F81AA7F1ED00EB0424 /* Frameworks */,
+				B36D25F91AA7F1ED00EB0424 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B36D25FD1AA7F1ED00EB0424 /* PBXTargetDependency */,
+			);
+			name = JinyongAllInOneTests;
+			productName = JinyongAllInOneTests;
+			productReference = B36D25FB1AA7F1ED00EB0424 /* JinyongAllInOneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B36D25D71AA7F1ED00EB0424 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "李巍";
+				TargetAttributes = {
+					B36D25DE1AA7F1ED00EB0424 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					B36D25FA1AA7F1ED00EB0424 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = B36D25DE1AA7F1ED00EB0424;
+					};
+				};
+			};
+			buildConfigurationList = B36D25DA1AA7F1ED00EB0424 /* Build configuration list for PBXProject "JinyongAllInOne" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B36D25D61AA7F1ED00EB0424;
+			productRefGroup = B36D25E01AA7F1ED00EB0424 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B36D25DE1AA7F1ED00EB0424 /* JinyongAllInOne */,
+				B36D25FA1AA7F1ED00EB0424 /* JinyongAllInOneTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B36D25DD1AA7F1ED00EB0424 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B36D25F11AA7F1ED00EB0424 /* Main.storyboard in Resources */,
+				B36D25F61AA7F1ED00EB0424 /* LaunchScreen.xib in Resources */,
+				B36D25F31AA7F1ED00EB0424 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B36D25F91AA7F1ED00EB0424 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B36D25DB1AA7F1ED00EB0424 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B36D25E81AA7F1ED00EB0424 /* AppDelegate.m in Sources */,
+				B36D25E51AA7F1ED00EB0424 /* main.m in Sources */,
+				B36D25EE1AA7F1ED00EB0424 /* ViewController.m in Sources */,
+				B36D25EB1AA7F1ED00EB0424 /* JinyongAllInOne.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B36D25F71AA7F1ED00EB0424 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B36D26021AA7F1EE00EB0424 /* JinyongAllInOneTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B36D25FD1AA7F1ED00EB0424 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B36D25DE1AA7F1ED00EB0424 /* JinyongAllInOne */;
+			targetProxy = B36D25FC1AA7F1ED00EB0424 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B36D25EF1AA7F1ED00EB0424 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B36D25F01AA7F1ED00EB0424 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B36D25F41AA7F1ED00EB0424 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B36D25F51AA7F1ED00EB0424 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B36D26031AA7F1EE00EB0424 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B36D26041AA7F1EE00EB0424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B36D26061AA7F1EE00EB0424 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JinyongAllInOne/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B36D26071AA7F1EE00EB0424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JinyongAllInOne/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B36D26091AA7F1EE00EB0424 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JinyongAllInOneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JinyongAllInOne.app/JinyongAllInOne";
+			};
+			name = Debug;
+		};
+		B36D260A1AA7F1EE00EB0424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JinyongAllInOneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JinyongAllInOne.app/JinyongAllInOne";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B36D25DA1AA7F1ED00EB0424 /* Build configuration list for PBXProject "JinyongAllInOne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B36D26031AA7F1EE00EB0424 /* Debug */,
+				B36D26041AA7F1EE00EB0424 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B36D26051AA7F1EE00EB0424 /* Build configuration list for PBXNativeTarget "JinyongAllInOne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B36D26061AA7F1EE00EB0424 /* Debug */,
+				B36D26071AA7F1EE00EB0424 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B36D26081AA7F1EE00EB0424 /* Build configuration list for PBXNativeTarget "JinyongAllInOneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B36D26091AA7F1EE00EB0424 /* Debug */,
+				B36D260A1AA7F1EE00EB0424 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B36D25E91AA7F1ED00EB0424 /* JinyongAllInOne.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B36D25EA1AA7F1ED00EB0424 /* JinyongAllInOne.xcdatamodel */,
+			);
+			currentVersion = B36D25EA1AA7F1ED00EB0424 /* JinyongAllInOne.xcdatamodel */;
+			path = JinyongAllInOne.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B36D25D71AA7F1ED00EB0424 /* Project object */;
+}
