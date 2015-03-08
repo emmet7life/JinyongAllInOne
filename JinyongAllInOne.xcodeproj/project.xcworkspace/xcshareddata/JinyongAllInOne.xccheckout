@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D23B8BDF-8A50-4B3E-B9E2-435819AB050D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>JinyongAllInOne</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1B86BFA8C11F87B86637D925F684988ABFE8D5F8</key>
+		<string>https://github.com/lw254605953/JinyongAllInOne.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>JinyongAllInOne.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1B86BFA8C11F87B86637D925F684988ABFE8D5F8</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/lw254605953/JinyongAllInOne.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1B86BFA8C11F87B86637D925F684988ABFE8D5F8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1B86BFA8C11F87B86637D925F684988ABFE8D5F8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>JinyongAllInOne</string>
+		</dict>
+	</array>
+</dict>
+</plist>

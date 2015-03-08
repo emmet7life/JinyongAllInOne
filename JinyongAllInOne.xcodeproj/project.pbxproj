@@ -15,6 +15,9 @@
 		B36D25F31AA7F1ED00EB0424 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B36D25F21AA7F1ED00EB0424 /* Images.xcassets */; };
 		B36D25F61AA7F1ED00EB0424 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B36D25F41AA7F1ED00EB0424 /* LaunchScreen.xib */; };
 		B36D26021AA7F1EE00EB0424 /* JinyongAllInOneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B36D26011AA7F1EE00EB0424 /* JinyongAllInOneTests.m */; };
+		C9B54EAB1AAC173A00FE0DF8 /* BookPageDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B54EA51AAC173A00FE0DF8 /* BookPageDataSource.m */; };
+		C9B54EAC1AAC173A00FE0DF8 /* BookPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B54EA71AAC173A00FE0DF8 /* BookPageViewController.m */; };
+		C9B54EAD1AAC173A00FE0DF8 /* BookPageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B54EA91AAC173A00FE0DF8 /* BookPageContentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,12 @@
 		B36D25FB1AA7F1ED00EB0424 /* JinyongAllInOneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JinyongAllInOneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36D26001AA7F1EE00EB0424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B36D26011AA7F1EE00EB0424 /* JinyongAllInOneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JinyongAllInOneTests.m; sourceTree = "<group>"; };
+		C9B54EA51AAC173A00FE0DF8 /* BookPageDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookPageDataSource.m; sourceTree = "<group>"; };
+		C9B54EA61AAC173A00FE0DF8 /* BookPageDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookPageDataSource.h; sourceTree = "<group>"; };
+		C9B54EA71AAC173A00FE0DF8 /* BookPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookPageViewController.m; sourceTree = "<group>"; };
+		C9B54EA81AAC173A00FE0DF8 /* BookPageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookPageContentViewController.h; sourceTree = "<group>"; };
+		C9B54EA91AAC173A00FE0DF8 /* BookPageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookPageContentViewController.m; sourceTree = "<group>"; };
+		C9B54EAA1AAC173A00FE0DF8 /* BookPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookPageViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +96,12 @@
 				B36D25E71AA7F1ED00EB0424 /* AppDelegate.m */,
 				B36D25EC1AA7F1ED00EB0424 /* ViewController.h */,
 				B36D25ED1AA7F1ED00EB0424 /* ViewController.m */,
+				C9B54EA61AAC173A00FE0DF8 /* BookPageDataSource.h */,
+				C9B54EA51AAC173A00FE0DF8 /* BookPageDataSource.m */,
+				C9B54EA81AAC173A00FE0DF8 /* BookPageContentViewController.h */,
+				C9B54EA71AAC173A00FE0DF8 /* BookPageViewController.m */,
+				C9B54EAA1AAC173A00FE0DF8 /* BookPageViewController.h */,
+				C9B54EA91AAC173A00FE0DF8 /* BookPageContentViewController.m */,
 				B36D25EF1AA7F1ED00EB0424 /* Main.storyboard */,
 				B36D25F21AA7F1ED00EB0424 /* Images.xcassets */,
 				B36D25F41AA7F1ED00EB0424 /* LaunchScreen.xib */,
@@ -222,9 +237,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9B54EAD1AAC173A00FE0DF8 /* BookPageContentViewController.m in Sources */,
 				B36D25E81AA7F1ED00EB0424 /* AppDelegate.m in Sources */,
 				B36D25E51AA7F1ED00EB0424 /* main.m in Sources */,
+				C9B54EAC1AAC173A00FE0DF8 /* BookPageViewController.m in Sources */,
 				B36D25EE1AA7F1ED00EB0424 /* ViewController.m in Sources */,
+				C9B54EAB1AAC173A00FE0DF8 /* BookPageDataSource.m in Sources */,
 				B36D25EB1AA7F1ED00EB0424 /* JinyongAllInOne.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +434,7 @@
 				B36D26071AA7F1EE00EB0424 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B36D26081AA7F1EE00EB0424 /* Build configuration list for PBXNativeTarget "JinyongAllInOneTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +443,7 @@
 				B36D260A1AA7F1EE00EB0424 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

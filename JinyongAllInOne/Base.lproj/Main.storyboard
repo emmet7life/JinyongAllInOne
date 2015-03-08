@@ -1,25 +1,89 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fAm-Jq-lAm">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Book Page View Controller-->
+        <scene sceneID="9F9-TF-gap">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <pageViewController storyboardIdentifier="BookPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="JyR-g0-2FC" customClass="BookPageViewController" sceneMemberID="viewController">
+                    <connections>
+                        <outlet property="dataSource" destination="kad-A7-CSu" id="rNI-bg-1R7"/>
+                    </connections>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JnD-mj-G4Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="kad-A7-CSu" customClass="BookPageDataSource"/>
             </objects>
+            <point key="canvasLocation" x="1802" y="-507"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aGP-Hv-pwC">
+            <objects>
+                <viewController id="fAm-Jq-lAm" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ebf-Jt-i3n"/>
+                        <viewControllerLayoutGuide type="bottom" id="sEU-Bd-U1z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="36S-TJ-wEb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mJ0-Wk-MhF">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <segue destination="JyR-g0-2FC" kind="embed" id="Ktc-Ll-tbW"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mJ0-Wk-MhF" firstAttribute="leading" secondItem="36S-TJ-wEb" secondAttribute="leading" id="OrY-oQ-k0z"/>
+                            <constraint firstAttribute="trailing" secondItem="mJ0-Wk-MhF" secondAttribute="trailing" id="uJC-AD-2Z8"/>
+                            <constraint firstItem="sEU-Bd-U1z" firstAttribute="top" secondItem="mJ0-Wk-MhF" secondAttribute="bottom" id="yjX-pv-Db6"/>
+                            <constraint firstItem="mJ0-Wk-MhF" firstAttribute="top" secondItem="36S-TJ-wEb" secondAttribute="top" id="yxP-br-aZf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="HuJ-uc-86Z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="03N-XU-AQL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1062" y="-507"/>
+        </scene>
+        <!--Book Page Content View Controller-->
+        <scene sceneID="KCh-A2-eV5">
+            <objects>
+                <viewController storyboardIdentifier="BookPageContentViewController" id="0P8-yd-YXg" customClass="BookPageContentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Vm-Bk-Ppf"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hmr-Ct-YyP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e7O-Tb-6wb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ApM-9b-gGB">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ApM-9b-gGB" secondAttribute="trailing" id="2jD-vd-lGf"/>
+                            <constraint firstItem="ApM-9b-gGB" firstAttribute="top" secondItem="e7O-Tb-6wb" secondAttribute="top" id="BDG-Si-cRq"/>
+                            <constraint firstItem="ApM-9b-gGB" firstAttribute="leading" secondItem="e7O-Tb-6wb" secondAttribute="leading" id="OCu-l2-x4A"/>
+                            <constraint firstItem="Hmr-Ct-YyP" firstAttribute="top" secondItem="ApM-9b-gGB" secondAttribute="bottom" id="fH9-vq-MQe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="ApM-9b-gGB" id="t05-Lt-VyQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1pw-qK-ldi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1802" y="263"/>
         </scene>
     </scenes>
 </document>
