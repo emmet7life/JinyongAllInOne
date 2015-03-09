@@ -12,4 +12,6 @@
 
 @property (strong, nonatomic) IBOutlet UITextView *contentView;
 
+@property (assign, nonatomic) NSInteger pageIndex;
+
 @end

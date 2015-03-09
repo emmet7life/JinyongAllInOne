@@ -8,6 +8,7 @@
 
 #import "BookPageViewController.h"
 #import "BookPageContentViewController.h"
+#import "BookPageDataSource.h"
 
 @interface BookPageViewController ()
 
@@ -19,8 +20,14 @@
     [super awakeFromNib];
     
     // 设置书籍的第一页
+	__weak typeof(self) weakSelf = self;
     [self setViewControllers:@[[self.storyboard instantiateViewControllerWithIdentifier:@"BookPageContentViewController"]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:^(BOOL finished) {
-        
+		if (weakSelf.dataSource) {
+			BookPageDataSource *dataSource = weakSelf.dataSource;
+			//从第一页开始计算页码，但是封面是第0页
+			dataSource.currentPageIndex = 0;
+			dataSource.maxPageCount = 10;
+		}
     }];
 }
 

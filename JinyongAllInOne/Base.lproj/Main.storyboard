@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fAm-Jq-lAm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jn5-Vz-ECB">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -18,9 +18,38 @@
             <point key="canvasLocation" x="1802" y="-507"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="7cj-bq-Z6B">
+            <objects>
+                <viewController id="jn5-Vz-ECB" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eZy-0T-r5M"/>
+                        <viewControllerLayoutGuide type="bottom" id="C7g-RQ-cSa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8qj-F0-p1T">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ObU-JF-hXl">
+                                <rect key="frame" x="270" y="211" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fAm-Jq-lAm" kind="presentation" id="MSF-Rl-6xr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PUf-R4-zFS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="274" y="-507"/>
+        </scene>
+        <!--Book Master View Controller-->
         <scene sceneID="aGP-Hv-pwC">
             <objects>
-                <viewController id="fAm-Jq-lAm" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="fAm-Jq-lAm" customClass="BookMasterViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ebf-Jt-i3n"/>
                         <viewControllerLayoutGuide type="bottom" id="sEU-Bd-U1z"/>
@@ -62,8 +91,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ApM-9b-gGB">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ApM-9b-gGB" customClass="BookContentView">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -72,7 +101,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="ApM-9b-gGB" secondAttribute="trailing" id="2jD-vd-lGf"/>
-                            <constraint firstItem="ApM-9b-gGB" firstAttribute="top" secondItem="e7O-Tb-6wb" secondAttribute="top" id="BDG-Si-cRq"/>
+                            <constraint firstItem="ApM-9b-gGB" firstAttribute="top" secondItem="e7O-Tb-6wb" secondAttribute="top" constant="20" id="BDG-Si-cRq"/>
                             <constraint firstItem="ApM-9b-gGB" firstAttribute="leading" secondItem="e7O-Tb-6wb" secondAttribute="leading" id="OCu-l2-x4A"/>
                             <constraint firstItem="Hmr-Ct-YyP" firstAttribute="top" secondItem="ApM-9b-gGB" secondAttribute="bottom" id="fH9-vq-MQe"/>
                         </constraints>

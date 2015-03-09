@@ -11,10 +11,13 @@
 		B36D25E81AA7F1ED00EB0424 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B36D25E71AA7F1ED00EB0424 /* AppDelegate.m */; };
 		B36D25EB1AA7F1ED00EB0424 /* JinyongAllInOne.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B36D25E91AA7F1ED00EB0424 /* JinyongAllInOne.xcdatamodeld */; };
 		B36D25EE1AA7F1ED00EB0424 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36D25ED1AA7F1ED00EB0424 /* ViewController.m */; };
-		B36D25F11AA7F1ED00EB0424 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B36D25EF1AA7F1ED00EB0424 /* Main.storyboard */; };
 		B36D25F31AA7F1ED00EB0424 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B36D25F21AA7F1ED00EB0424 /* Images.xcassets */; };
 		B36D25F61AA7F1ED00EB0424 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B36D25F41AA7F1ED00EB0424 /* LaunchScreen.xib */; };
 		B36D26021AA7F1EE00EB0424 /* JinyongAllInOneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B36D26011AA7F1EE00EB0424 /* JinyongAllInOneTests.m */; };
+		B3AD17591AAD6A8A00BF9EDC /* BookContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AD17581AAD6A8A00BF9EDC /* BookContentView.m */; };
+		B3AD175C1AAD811800BF9EDC /* BookMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AD175B1AAD811800BF9EDC /* BookMasterViewController.m */; };
+		B3AD175F1AAD81BC00BF9EDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3AD175D1AAD81BC00BF9EDC /* Main.storyboard */; };
+		B3AD17621AAD9BE000BF9EDC /* BookPageDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AD17611AAD9BE000BF9EDC /* BookPageDelegate.m */; };
 		C9B54EAB1AAC173A00FE0DF8 /* BookPageDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B54EA51AAC173A00FE0DF8 /* BookPageDataSource.m */; };
 		C9B54EAC1AAC173A00FE0DF8 /* BookPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B54EA71AAC173A00FE0DF8 /* BookPageViewController.m */; };
 		C9B54EAD1AAC173A00FE0DF8 /* BookPageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B54EA91AAC173A00FE0DF8 /* BookPageContentViewController.m */; };
@@ -39,12 +42,18 @@
 		B36D25EA1AA7F1ED00EB0424 /* JinyongAllInOne.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JinyongAllInOne.xcdatamodel; sourceTree = "<group>"; };
 		B36D25EC1AA7F1ED00EB0424 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B36D25ED1AA7F1ED00EB0424 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B36D25F01AA7F1ED00EB0424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B36D25F21AA7F1ED00EB0424 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B36D25F51AA7F1ED00EB0424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B36D25FB1AA7F1ED00EB0424 /* JinyongAllInOneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JinyongAllInOneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36D26001AA7F1EE00EB0424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B36D26011AA7F1EE00EB0424 /* JinyongAllInOneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JinyongAllInOneTests.m; sourceTree = "<group>"; };
+		B3AD17571AAD6A8A00BF9EDC /* BookContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookContentView.h; sourceTree = "<group>"; };
+		B3AD17581AAD6A8A00BF9EDC /* BookContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookContentView.m; sourceTree = "<group>"; };
+		B3AD175A1AAD811800BF9EDC /* BookMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookMasterViewController.h; sourceTree = "<group>"; };
+		B3AD175B1AAD811800BF9EDC /* BookMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookMasterViewController.m; sourceTree = "<group>"; };
+		B3AD175E1AAD81BC00BF9EDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B3AD17601AAD9BE000BF9EDC /* BookPageDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookPageDelegate.h; sourceTree = "<group>"; };
+		B3AD17611AAD9BE000BF9EDC /* BookPageDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookPageDelegate.m; sourceTree = "<group>"; };
 		C9B54EA51AAC173A00FE0DF8 /* BookPageDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookPageDataSource.m; sourceTree = "<group>"; };
 		C9B54EA61AAC173A00FE0DF8 /* BookPageDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookPageDataSource.h; sourceTree = "<group>"; };
 		C9B54EA71AAC173A00FE0DF8 /* BookPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookPageViewController.m; sourceTree = "<group>"; };
@@ -96,16 +105,22 @@
 				B36D25E71AA7F1ED00EB0424 /* AppDelegate.m */,
 				B36D25EC1AA7F1ED00EB0424 /* ViewController.h */,
 				B36D25ED1AA7F1ED00EB0424 /* ViewController.m */,
+				B3AD175A1AAD811800BF9EDC /* BookMasterViewController.h */,
+				B3AD175B1AAD811800BF9EDC /* BookMasterViewController.m */,
 				C9B54EA61AAC173A00FE0DF8 /* BookPageDataSource.h */,
 				C9B54EA51AAC173A00FE0DF8 /* BookPageDataSource.m */,
-				C9B54EA81AAC173A00FE0DF8 /* BookPageContentViewController.h */,
-				C9B54EA71AAC173A00FE0DF8 /* BookPageViewController.m */,
+				B3AD17601AAD9BE000BF9EDC /* BookPageDelegate.h */,
+				B3AD17611AAD9BE000BF9EDC /* BookPageDelegate.m */,
 				C9B54EAA1AAC173A00FE0DF8 /* BookPageViewController.h */,
+				C9B54EA71AAC173A00FE0DF8 /* BookPageViewController.m */,
+				C9B54EA81AAC173A00FE0DF8 /* BookPageContentViewController.h */,
 				C9B54EA91AAC173A00FE0DF8 /* BookPageContentViewController.m */,
-				B36D25EF1AA7F1ED00EB0424 /* Main.storyboard */,
+				B3AD17571AAD6A8A00BF9EDC /* BookContentView.h */,
+				B3AD17581AAD6A8A00BF9EDC /* BookContentView.m */,
 				B36D25F21AA7F1ED00EB0424 /* Images.xcassets */,
 				B36D25F41AA7F1ED00EB0424 /* LaunchScreen.xib */,
 				B36D25E91AA7F1ED00EB0424 /* JinyongAllInOne.xcdatamodeld */,
+				B3AD175D1AAD81BC00BF9EDC /* Main.storyboard */,
 				B36D25E21AA7F1ED00EB0424 /* Supporting Files */,
 			);
 			path = JinyongAllInOne;
@@ -217,7 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B36D25F11AA7F1ED00EB0424 /* Main.storyboard in Resources */,
+				B3AD175F1AAD81BC00BF9EDC /* Main.storyboard in Resources */,
 				B36D25F61AA7F1ED00EB0424 /* LaunchScreen.xib in Resources */,
 				B36D25F31AA7F1ED00EB0424 /* Images.xcassets in Resources */,
 			);
@@ -237,12 +252,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3AD17621AAD9BE000BF9EDC /* BookPageDelegate.m in Sources */,
 				C9B54EAD1AAC173A00FE0DF8 /* BookPageContentViewController.m in Sources */,
 				B36D25E81AA7F1ED00EB0424 /* AppDelegate.m in Sources */,
 				B36D25E51AA7F1ED00EB0424 /* main.m in Sources */,
 				C9B54EAC1AAC173A00FE0DF8 /* BookPageViewController.m in Sources */,
 				B36D25EE1AA7F1ED00EB0424 /* ViewController.m in Sources */,
+				B3AD17591AAD6A8A00BF9EDC /* BookContentView.m in Sources */,
 				C9B54EAB1AAC173A00FE0DF8 /* BookPageDataSource.m in Sources */,
+				B3AD175C1AAD811800BF9EDC /* BookMasterViewController.m in Sources */,
 				B36D25EB1AA7F1ED00EB0424 /* JinyongAllInOne.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,20 +284,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B36D25EF1AA7F1ED00EB0424 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B36D25F01AA7F1ED00EB0424 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B36D25F41AA7F1ED00EB0424 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B36D25F51AA7F1ED00EB0424 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		B3AD175D1AAD81BC00BF9EDC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3AD175E1AAD81BC00BF9EDC /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

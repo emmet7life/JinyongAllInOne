@@ -1,27 +1,30 @@
 //
-//  BookPageContentViewController.m
-//  BookStore
+//  BookMasterViewController.m
+//  JinyongAllInOne
 //
-//  Created by 李巍 on 15/2/5.
-//  Copyright (c) 2015年 LW. All rights reserved.
+//  Created by 李巍 on 15/3/9.
+//  Copyright (c) 2015年 李巍. All rights reserved.
 //
 
+#import "BookMasterViewController.h"
+#import "BookPageViewController.h"
 #import "BookPageContentViewController.h"
 
-@interface BookPageContentViewController ()
+
+@interface BookMasterViewController ()
+
+@property (strong, nonatomic) BookPageViewController *pageViewController;
+@property (strong, nonatomic) NSArray *pageContent;
 
 @end
 
-@implementation BookPageContentViewController
+@implementation BookMasterViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-	if (self.pageIndex == 0) {
-		self.contentView.text = @"我是封面！！！！";
-	}else {
-		self.contentView.text = [NSString stringWithFormat:@"page %zd", self.pageIndex];
-	}
+	
+	self.pageViewController = [self.childViewControllers firstObject];
 	
 }
 

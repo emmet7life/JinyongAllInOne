@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface BookPageDataSource : NSObject
+@interface BookPageDataSource : NSObject <UIPageViewControllerDataSource>
 
 @property (assign, nonatomic) NSInteger maxPageCount;
 
