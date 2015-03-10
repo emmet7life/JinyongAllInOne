@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B355C9421AAE881100A4E62B /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = B355C9411AAE881100A4E62B /* InterfaceController.m */; };
+		B355C9451AAE881100A4E62B /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B355C9441AAE881100A4E62B /* NotificationController.m */; };
+		B355C9481AAE881100A4E62B /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = B355C9471AAE881100A4E62B /* GlanceController.m */; };
+		B355C94A1AAE881100A4E62B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B355C9491AAE881100A4E62B /* Images.xcassets */; };
+		B355C94E1AAE881200A4E62B /* JinyongAllInOne WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = B355C94D1AAE881200A4E62B /* JinyongAllInOne WatchKit App.app */; };
+		B355C9561AAE881200A4E62B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B355C9541AAE881200A4E62B /* Interface.storyboard */; };
+		B355C9581AAE881200A4E62B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B355C9571AAE881200A4E62B /* Images.xcassets */; };
+		B355C95B1AAE881200A4E62B /* JinyongAllInOne WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B355C93B1AAE881100A4E62B /* JinyongAllInOne WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B36D25E51AA7F1ED00EB0424 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B36D25E41AA7F1ED00EB0424 /* main.m */; };
 		B36D25E81AA7F1ED00EB0424 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B36D25E71AA7F1ED00EB0424 /* AppDelegate.m */; };
 		B36D25EB1AA7F1ED00EB0424 /* JinyongAllInOne.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B36D25E91AA7F1ED00EB0424 /* JinyongAllInOne.xcdatamodeld */; };
@@ -17,13 +25,25 @@
 		B3AD17591AAD6A8A00BF9EDC /* BookContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AD17581AAD6A8A00BF9EDC /* BookContentView.m */; };
 		B3AD175C1AAD811800BF9EDC /* BookMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AD175B1AAD811800BF9EDC /* BookMasterViewController.m */; };
 		B3AD175F1AAD81BC00BF9EDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3AD175D1AAD81BC00BF9EDC /* Main.storyboard */; };
-		B3AD17621AAD9BE000BF9EDC /* BookPageDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AD17611AAD9BE000BF9EDC /* BookPageDelegate.m */; };
-		C9B54EAB1AAC173A00FE0DF8 /* BookPageDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B54EA51AAC173A00FE0DF8 /* BookPageDataSource.m */; };
 		C9B54EAC1AAC173A00FE0DF8 /* BookPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B54EA71AAC173A00FE0DF8 /* BookPageViewController.m */; };
 		C9B54EAD1AAC173A00FE0DF8 /* BookPageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B54EA91AAC173A00FE0DF8 /* BookPageContentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B355C94F1AAE881200A4E62B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B36D25D71AA7F1ED00EB0424 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B355C94C1AAE881200A4E62B;
+			remoteInfo = "JinyongAllInOne WatchKit App";
+		};
+		B355C9591AAE881200A4E62B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B36D25D71AA7F1ED00EB0424 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B355C93A1AAE881100A4E62B;
+			remoteInfo = "JinyongAllInOne WatchKit Extension";
+		};
 		B36D25FC1AA7F1ED00EB0424 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B36D25D71AA7F1ED00EB0424 /* Project object */;
@@ -33,7 +53,35 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B355C9621AAE881200A4E62B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B355C95B1AAE881200A4E62B /* JinyongAllInOne WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		B355C93B1AAE881100A4E62B /* JinyongAllInOne WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "JinyongAllInOne WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B355C93E1AAE881100A4E62B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B355C93F1AAE881100A4E62B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B355C9401AAE881100A4E62B /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		B355C9411AAE881100A4E62B /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		B355C9431AAE881100A4E62B /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		B355C9441AAE881100A4E62B /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		B355C9461AAE881100A4E62B /* GlanceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
+		B355C9471AAE881100A4E62B /* GlanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
+		B355C9491AAE881100A4E62B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B355C94D1AAE881200A4E62B /* JinyongAllInOne WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JinyongAllInOne WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B355C9531AAE881200A4E62B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B355C9551AAE881200A4E62B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B355C9571AAE881200A4E62B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B36D25DF1AA7F1ED00EB0424 /* JinyongAllInOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JinyongAllInOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36D25E31AA7F1ED00EB0424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B36D25E41AA7F1ED00EB0424 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -52,10 +100,6 @@
 		B3AD175A1AAD811800BF9EDC /* BookMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookMasterViewController.h; sourceTree = "<group>"; };
 		B3AD175B1AAD811800BF9EDC /* BookMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookMasterViewController.m; sourceTree = "<group>"; };
 		B3AD175E1AAD81BC00BF9EDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B3AD17601AAD9BE000BF9EDC /* BookPageDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookPageDelegate.h; sourceTree = "<group>"; };
-		B3AD17611AAD9BE000BF9EDC /* BookPageDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookPageDelegate.m; sourceTree = "<group>"; };
-		C9B54EA51AAC173A00FE0DF8 /* BookPageDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookPageDataSource.m; sourceTree = "<group>"; };
-		C9B54EA61AAC173A00FE0DF8 /* BookPageDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookPageDataSource.h; sourceTree = "<group>"; };
 		C9B54EA71AAC173A00FE0DF8 /* BookPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookPageViewController.m; sourceTree = "<group>"; };
 		C9B54EA81AAC173A00FE0DF8 /* BookPageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookPageContentViewController.h; sourceTree = "<group>"; };
 		C9B54EA91AAC173A00FE0DF8 /* BookPageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookPageContentViewController.m; sourceTree = "<group>"; };
@@ -63,6 +107,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B355C9381AAE881100A4E62B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B36D25DC1AA7F1ED00EB0424 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -80,11 +131,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B355C93C1AAE881100A4E62B /* JinyongAllInOne WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B355C9401AAE881100A4E62B /* InterfaceController.h */,
+				B355C9411AAE881100A4E62B /* InterfaceController.m */,
+				B355C9431AAE881100A4E62B /* NotificationController.h */,
+				B355C9441AAE881100A4E62B /* NotificationController.m */,
+				B355C9461AAE881100A4E62B /* GlanceController.h */,
+				B355C9471AAE881100A4E62B /* GlanceController.m */,
+				B355C9491AAE881100A4E62B /* Images.xcassets */,
+				B355C93D1AAE881100A4E62B /* Supporting Files */,
+			);
+			path = "JinyongAllInOne WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		B355C93D1AAE881100A4E62B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B355C93E1AAE881100A4E62B /* Info.plist */,
+				B355C93F1AAE881100A4E62B /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B355C9511AAE881200A4E62B /* JinyongAllInOne WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				B355C9541AAE881200A4E62B /* Interface.storyboard */,
+				B355C9571AAE881200A4E62B /* Images.xcassets */,
+				B355C9521AAE881200A4E62B /* Supporting Files */,
+			);
+			path = "JinyongAllInOne WatchKit App";
+			sourceTree = "<group>";
+		};
+		B355C9521AAE881200A4E62B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B355C9531AAE881200A4E62B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		B36D25D61AA7F1ED00EB0424 = {
 			isa = PBXGroup;
 			children = (
 				B36D25E11AA7F1ED00EB0424 /* JinyongAllInOne */,
 				B36D25FE1AA7F1EE00EB0424 /* JinyongAllInOneTests */,
+				B355C93C1AAE881100A4E62B /* JinyongAllInOne WatchKit Extension */,
+				B355C9511AAE881200A4E62B /* JinyongAllInOne WatchKit App */,
 				B36D25E01AA7F1ED00EB0424 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +189,8 @@
 			children = (
 				B36D25DF1AA7F1ED00EB0424 /* JinyongAllInOne.app */,
 				B36D25FB1AA7F1ED00EB0424 /* JinyongAllInOneTests.xctest */,
+				B355C93B1AAE881100A4E62B /* JinyongAllInOne WatchKit Extension.appex */,
+				B355C94D1AAE881200A4E62B /* JinyongAllInOne WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,10 +204,6 @@
 				B36D25ED1AA7F1ED00EB0424 /* ViewController.m */,
 				B3AD175A1AAD811800BF9EDC /* BookMasterViewController.h */,
 				B3AD175B1AAD811800BF9EDC /* BookMasterViewController.m */,
-				C9B54EA61AAC173A00FE0DF8 /* BookPageDataSource.h */,
-				C9B54EA51AAC173A00FE0DF8 /* BookPageDataSource.m */,
-				B3AD17601AAD9BE000BF9EDC /* BookPageDelegate.h */,
-				B3AD17611AAD9BE000BF9EDC /* BookPageDelegate.m */,
 				C9B54EAA1AAC173A00FE0DF8 /* BookPageViewController.h */,
 				C9B54EA71AAC173A00FE0DF8 /* BookPageViewController.m */,
 				C9B54EA81AAC173A00FE0DF8 /* BookPageContentViewController.h */,
@@ -118,7 +211,6 @@
 				B3AD17571AAD6A8A00BF9EDC /* BookContentView.h */,
 				B3AD17581AAD6A8A00BF9EDC /* BookContentView.m */,
 				B36D25F21AA7F1ED00EB0424 /* Images.xcassets */,
-				B36D25F41AA7F1ED00EB0424 /* LaunchScreen.xib */,
 				B36D25E91AA7F1ED00EB0424 /* JinyongAllInOne.xcdatamodeld */,
 				B3AD175D1AAD81BC00BF9EDC /* Main.storyboard */,
 				B36D25E21AA7F1ED00EB0424 /* Supporting Files */,
@@ -129,6 +221,7 @@
 		B36D25E21AA7F1ED00EB0424 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B36D25F41AA7F1ED00EB0424 /* LaunchScreen.xib */,
 				B36D25E31AA7F1ED00EB0424 /* Info.plist */,
 				B36D25E41AA7F1ED00EB0424 /* main.m */,
 			);
@@ -155,6 +248,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B355C93A1AAE881100A4E62B /* JinyongAllInOne WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B355C9611AAE881200A4E62B /* Build configuration list for PBXNativeTarget "JinyongAllInOne WatchKit Extension" */;
+			buildPhases = (
+				B355C9371AAE881100A4E62B /* Sources */,
+				B355C9381AAE881100A4E62B /* Frameworks */,
+				B355C9391AAE881100A4E62B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B355C9501AAE881200A4E62B /* PBXTargetDependency */,
+			);
+			name = "JinyongAllInOne WatchKit Extension";
+			productName = "JinyongAllInOne WatchKit Extension";
+			productReference = B355C93B1AAE881100A4E62B /* JinyongAllInOne WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		B355C94C1AAE881200A4E62B /* JinyongAllInOne WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B355C9601AAE881200A4E62B /* Build configuration list for PBXNativeTarget "JinyongAllInOne WatchKit App" */;
+			buildPhases = (
+				B355C94B1AAE881200A4E62B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JinyongAllInOne WatchKit App";
+			productName = "JinyongAllInOne WatchKit App";
+			productReference = B355C94D1AAE881200A4E62B /* JinyongAllInOne WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 		B36D25DE1AA7F1ED00EB0424 /* JinyongAllInOne */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B36D26051AA7F1EE00EB0424 /* Build configuration list for PBXNativeTarget "JinyongAllInOne" */;
@@ -162,10 +288,12 @@
 				B36D25DB1AA7F1ED00EB0424 /* Sources */,
 				B36D25DC1AA7F1ED00EB0424 /* Frameworks */,
 				B36D25DD1AA7F1ED00EB0424 /* Resources */,
+				B355C9621AAE881200A4E62B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B355C95A1AAE881200A4E62B /* PBXTargetDependency */,
 			);
 			name = JinyongAllInOne;
 			productName = JinyongAllInOne;
@@ -199,6 +327,12 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "李巍";
 				TargetAttributes = {
+					B355C93A1AAE881100A4E62B = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					B355C94C1AAE881200A4E62B = {
+						CreatedOnToolsVersion = 6.2;
+					};
 					B36D25DE1AA7F1ED00EB0424 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -223,11 +357,31 @@
 			targets = (
 				B36D25DE1AA7F1ED00EB0424 /* JinyongAllInOne */,
 				B36D25FA1AA7F1ED00EB0424 /* JinyongAllInOneTests */,
+				B355C93A1AAE881100A4E62B /* JinyongAllInOne WatchKit Extension */,
+				B355C94C1AAE881200A4E62B /* JinyongAllInOne WatchKit App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B355C9391AAE881100A4E62B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B355C94E1AAE881200A4E62B /* JinyongAllInOne WatchKit App.app in Resources */,
+				B355C94A1AAE881100A4E62B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B355C94B1AAE881200A4E62B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B355C9561AAE881200A4E62B /* Interface.storyboard in Resources */,
+				B355C9581AAE881200A4E62B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B36D25DD1AA7F1ED00EB0424 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -248,18 +402,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B355C9371AAE881100A4E62B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B355C9451AAE881100A4E62B /* NotificationController.m in Sources */,
+				B355C9421AAE881100A4E62B /* InterfaceController.m in Sources */,
+				B355C9481AAE881100A4E62B /* GlanceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B36D25DB1AA7F1ED00EB0424 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3AD17621AAD9BE000BF9EDC /* BookPageDelegate.m in Sources */,
 				C9B54EAD1AAC173A00FE0DF8 /* BookPageContentViewController.m in Sources */,
 				B36D25E81AA7F1ED00EB0424 /* AppDelegate.m in Sources */,
 				B36D25E51AA7F1ED00EB0424 /* main.m in Sources */,
 				C9B54EAC1AAC173A00FE0DF8 /* BookPageViewController.m in Sources */,
 				B36D25EE1AA7F1ED00EB0424 /* ViewController.m in Sources */,
 				B3AD17591AAD6A8A00BF9EDC /* BookContentView.m in Sources */,
-				C9B54EAB1AAC173A00FE0DF8 /* BookPageDataSource.m in Sources */,
 				B3AD175C1AAD811800BF9EDC /* BookMasterViewController.m in Sources */,
 				B36D25EB1AA7F1ED00EB0424 /* JinyongAllInOne.xcdatamodeld in Sources */,
 			);
@@ -276,6 +438,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B355C9501AAE881200A4E62B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B355C94C1AAE881200A4E62B /* JinyongAllInOne WatchKit App */;
+			targetProxy = B355C94F1AAE881200A4E62B /* PBXContainerItemProxy */;
+		};
+		B355C95A1AAE881200A4E62B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B355C93A1AAE881100A4E62B /* JinyongAllInOne WatchKit Extension */;
+			targetProxy = B355C9591AAE881200A4E62B /* PBXContainerItemProxy */;
+		};
 		B36D25FD1AA7F1ED00EB0424 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B36D25DE1AA7F1ED00EB0424 /* JinyongAllInOne */;
@@ -284,6 +456,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		B355C9541AAE881200A4E62B /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B355C9551AAE881200A4E62B /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		B36D25F41AA7F1ED00EB0424 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -303,6 +483,66 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B355C95C1AAE881200A4E62B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JinyongAllInOne WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B355C95D1AAE881200A4E62B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = "JinyongAllInOne WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B355C95E1AAE881200A4E62B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = JinyongAllInOne_WatchKit_Extension;
+				INFOPLIST_FILE = "JinyongAllInOne WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		B355C95F1AAE881200A4E62B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COPY_PHASE_STRIP = NO;
+				IBSC_MODULE = JinyongAllInOne_WatchKit_Extension;
+				INFOPLIST_FILE = "JinyongAllInOne WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
 		B36D26031AA7F1EE00EB0424 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -436,6 +676,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B355C9601AAE881200A4E62B /* Build configuration list for PBXNativeTarget "JinyongAllInOne WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B355C95E1AAE881200A4E62B /* Debug */,
+				B355C95F1AAE881200A4E62B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B355C9611AAE881200A4E62B /* Build configuration list for PBXNativeTarget "JinyongAllInOne WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B355C95C1AAE881200A4E62B /* Debug */,
+				B355C95D1AAE881200A4E62B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B36D25DA1AA7F1ED00EB0424 /* Build configuration list for PBXProject "JinyongAllInOne" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

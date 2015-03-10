@@ -18,6 +18,8 @@
 	[super awakeFromNib];
 	UIMenuItem *menuItem = [[UIMenuItem alloc] initWithTitle:@"Change Color" action:@selector(changeColor:)];
 	[[UIMenuController sharedMenuController] setMenuItems:[NSArray arrayWithObject:menuItem]];
+	
+	self.textContainerInset = UIEdgeInsetsMake(20, 20, 20, 20);
 }
 
 - (BOOL)canBecomeFirstResponder {

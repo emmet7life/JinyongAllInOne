@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BookPageViewController : UIPageViewController
+@interface BookPageViewController : UIPageViewController <UIPageViewControllerDataSource, UIPageViewControllerDelegate>
+
+@property (assign, nonatomic) NSInteger maxPageCount;
+
+@property (assign, nonatomic) NSInteger currentPageIndex;
 
 @end
