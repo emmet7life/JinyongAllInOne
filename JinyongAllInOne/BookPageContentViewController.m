@@ -8,6 +8,8 @@
 
 #import "BookPageContentViewController.h"
 
+#import "BookContentDataSource.h"
+
 @interface BookPageContentViewController ()
 
 @end
@@ -17,12 +19,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-	if (self.pageIndex == 0) {
-		self.contentView.text = @"我是封面！！！！";
-	}else {
-		self.contentView.text = [NSString stringWithFormat:@"page %zd", self.pageIndex];
-	}
+	[self showPageContent];
+}
+
+- (void)showPageContent {
+	// 设置内容
+//	self.contentView.layoutManager.hyphenationFactor = 1.0;
+//	[BookContentDataSource sharedInstance].contentLayoutManager = self.contentView.layoutManager;
+//	[BookContentDataSource sharedInstance].contentContainer = self.contentView.textContainer;
+//	[self.contentView.textStorage setAttributedString:[[NSAttributedString alloc] initWithString:[[BookContentDataSource sharedInstance] contentAtPageIndex:self.pageIndex]]];
 	
+//	[self.contentView.textStorage setAttributedString:[BookContentDataSource sharedInstance].textStorage];
+//	
+//	[self.contentView.textStorage addAttributes:[[BookContentDataSource sharedInstance] contentAttributes] range:NSMakeRange(0, self.contentView.textStorage.string.length)];
+	
+	[self.contentView.layoutManager addTextContainer:[[BookContentDataSource sharedInstance].contentLayoutManager textContainers][self.pageIndex]];
+	
+//	NSRange range = [self.contentView.layoutManager glyphRangeForTextContainer:self.contentView.textContainer];
+////	NSUInteger glyphs = [self.contentView.layoutManager numberOfGlyphs];
+//	NSLog(@"range loc = %lu, length = %lu", (unsigned long)range.location, (unsigned long)range.length);
+////	NSLog(@"glyphsss == %zd", glyphs);
+//	
+//	[self.contentView.layoutManager invalidateDisplayForGlyphRange:range];
+//	[[BookContentDataSource sharedInstance] calculatePageRanges];
 }
 
 - (void)didReceiveMemoryWarning {

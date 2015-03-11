@@ -7,13 +7,8 @@
         <!--Book Page View Controller-->
         <scene sceneID="9F9-TF-gap">
             <objects>
-                <pageViewController storyboardIdentifier="BookPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="JyR-g0-2FC" customClass="BookPageViewController" sceneMemberID="viewController">
-                    <connections>
-                        <outlet property="dataSource" destination="kad-A7-CSu" id="rNI-bg-1R7"/>
-                    </connections>
-                </pageViewController>
+                <pageViewController storyboardIdentifier="BookPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="JyR-g0-2FC" customClass="BookPageViewController" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JnD-mj-G4Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="kad-A7-CSu" customClass="BookPageDataSource"/>
             </objects>
             <point key="canvasLocation" x="2614" y="-507"/>
         </scene>
