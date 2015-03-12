@@ -44,16 +44,6 @@
 	return self;
 }
 
-//- (void)setContentContainer:(NSTextContainer *)contentContainer {
-//	_contentContainer = contentContainer;
-//	NSTextContainer *container = [[NSTextContainer alloc] initWithSize:contentContainer.size];
-//	container.exclusionPaths = contentContainer.exclusionPaths;
-//	container.lineFragmentPadding = contentContainer.lineFragmentPadding;
-//	container.lineBreakMode = contentContainer.lineBreakMode;
-//	container.maximumNumberOfLines = contentContainer.maximumNumberOfLines;
-//	[self.contentLayoutManager addTextContainer:container];
-//}
-
 - (NSString *)loadDataWithBookName:(NSString *)bName {
 	NSStringEncoding enc = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
 	NSError *error = nil;
@@ -64,25 +54,17 @@
 	return string;
 }
 
-//- (NSTextContainer *)calculatePageContainerAtIndex:(NSInteger)index {
-//	if (index >= [self.pageContainers count]) {
-//		NSTextContainer *container = [[NSTextContainer alloc] initWithSize:self.containerSize];
-////		container.exclusionPaths = contentContainer.exclusionPaths;
-////		container.lineFragmentPadding = contentContainer.lineFragmentPadding;
-////		container.lineBreakMode = contentContainer.lineBreakMode;
-////		container.maximumNumberOfLines = contentContainer.maximumNumberOfLines;
-//		[self.contentLayoutManager addTextContainer:container];
-//	}
-//}
-
-- (NSAttributedString *)contentAtPageIndex:(NSInteger)index withContainerSize:(CGSize)size {
+- (NSTextContainer *)calculatePageContainerAtIndex:(NSInteger)index withContainerSize:(CGSize)size {
 	if (index >= [self.pageContainers count]) {
 		NSTextContainer *container = [[NSTextContainer alloc] initWithSize:size];
 		[self.contentLayoutManager addTextContainer:container];
 		[self.pageContainers addObject:container];
 	}
-	NSTextContainer *container = self.contentLayoutManager.textContainers[index];
-//	[self.contentLayoutManager textContainerChangedGeometry:container];
+	return self.contentLayoutManager.textContainers[index];
+}
+
+- (NSAttributedString *)contentAtPageIndex:(NSInteger)index withContainerSize:(CGSize)size {
+	NSTextContainer *container = [self calculatePageContainerAtIndex:index withContainerSize:size];
 	NSRange range = [self.contentLayoutManager glyphRangeForTextContainer:container];
 	return [self.textStorage attributedSubstringFromRange:range];
 }

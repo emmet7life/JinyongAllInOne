@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "BookMasterViewController.h"
 
 @interface ViewController ()
 
@@ -21,10 +21,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 	
-	
+	self.navigationController.navigationBarHidden = YES;
 	
     
     
+}
+
+- (IBAction)readBook {
+	BookMasterViewController *master = [self.storyboard instantiateViewControllerWithIdentifier:@"BookMasterViewController"];
+//	[self.navigationController pushViewController:master animated:YES];
+	
+	[self presentViewController:master animated:YES completion:NULL];
 }
 
 

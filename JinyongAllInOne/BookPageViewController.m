@@ -52,8 +52,7 @@
 
 - (BookPageContentViewController *)bookContentControllerAtIndex:(NSUInteger)index {
 	self.currentPageIndex = index;
-	UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-	BookPageContentViewController *pageContentViewController = [storyboard instantiateViewControllerWithIdentifier:@"BookPageContentViewController"];
+	BookPageContentViewController *pageContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BookPageContentViewController"];
 	pageContentViewController.pageIndex = index;
 	return pageContentViewController;
 }

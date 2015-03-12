@@ -17,7 +17,6 @@
 		B355C95B1AAE881200A4E62B /* JinyongAllInOne WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B355C93B1AAE881100A4E62B /* JinyongAllInOne WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B3658A181AAFE364008E8F6D /* 雪山飞狐.txt in Resources */ = {isa = PBXBuildFile; fileRef = B3658A171AAFE364008E8F6D /* 雪山飞狐.txt */; };
 		B3658A1B1AAFEE71008E8F6D /* BookContentDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B3658A1A1AAFEE71008E8F6D /* BookContentDataSource.m */; };
-		B3658A1E1AB02A0B008E8F6D /* EBookStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = B3658A1D1AB02A0B008E8F6D /* EBookStorage.m */; };
 		B36D25E51AA7F1ED00EB0424 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B36D25E41AA7F1ED00EB0424 /* main.m */; };
 		B36D25E81AA7F1ED00EB0424 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B36D25E71AA7F1ED00EB0424 /* AppDelegate.m */; };
 		B36D25EB1AA7F1ED00EB0424 /* JinyongAllInOne.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B36D25E91AA7F1ED00EB0424 /* JinyongAllInOne.xcdatamodeld */; };
@@ -88,8 +87,6 @@
 		B3658A171AAFE364008E8F6D /* 雪山飞狐.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "雪山飞狐.txt"; sourceTree = "<group>"; };
 		B3658A191AAFEE71008E8F6D /* BookContentDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookContentDataSource.h; sourceTree = "<group>"; };
 		B3658A1A1AAFEE71008E8F6D /* BookContentDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookContentDataSource.m; sourceTree = "<group>"; };
-		B3658A1C1AB02A0B008E8F6D /* EBookStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBookStorage.h; sourceTree = "<group>"; };
-		B3658A1D1AB02A0B008E8F6D /* EBookStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBookStorage.m; sourceTree = "<group>"; };
 		B36D25DF1AA7F1ED00EB0424 /* JinyongAllInOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JinyongAllInOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36D25E31AA7F1ED00EB0424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B36D25E41AA7F1ED00EB0424 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -220,8 +217,6 @@
 				B3658A1A1AAFEE71008E8F6D /* BookContentDataSource.m */,
 				B3AD17571AAD6A8A00BF9EDC /* BookContentView.h */,
 				B3AD17581AAD6A8A00BF9EDC /* BookContentView.m */,
-				B3658A1C1AB02A0B008E8F6D /* EBookStorage.h */,
-				B3658A1D1AB02A0B008E8F6D /* EBookStorage.m */,
 				B36D25F21AA7F1ED00EB0424 /* Images.xcassets */,
 				B36D25E91AA7F1ED00EB0424 /* JinyongAllInOne.xcdatamodeld */,
 				B3AD175D1AAD81BC00BF9EDC /* Main.storyboard */,
@@ -432,7 +427,6 @@
 			files = (
 				C9B54EAD1AAC173A00FE0DF8 /* BookPageContentViewController.m in Sources */,
 				B3658A1B1AAFEE71008E8F6D /* BookContentDataSource.m in Sources */,
-				B3658A1E1AB02A0B008E8F6D /* EBookStorage.m in Sources */,
 				B36D25E81AA7F1ED00EB0424 /* AppDelegate.m in Sources */,
 				B36D25E51AA7F1ED00EB0424 /* main.m in Sources */,
 				C9B54EAC1AAC173A00FE0DF8 /* BookPageViewController.m in Sources */,
