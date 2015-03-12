@@ -23,6 +23,7 @@
 
 - (void)viewDidLayoutSubviews {
 	[super viewDidLayoutSubviews];
+        
 	[self showPageContent];
 }
 

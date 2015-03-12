@@ -36,7 +36,7 @@
 	self = [super init];
 	if (self) {
 		self.pageContainers = [[NSMutableArray alloc] initWithCapacity:20];
-		self.textStorage = [[NSTextStorage alloc] initWithString:[self loadDataWithBookName:@"雪山飞狐"]];
+		self.textStorage = [[NSTextStorage alloc] initWithString:[self loadDataWithBookName:@"千年诅咒"]];
 		[self.textStorage addAttributes:[self contentAttributes] range:NSMakeRange(0, [self.textStorage.string length])];
 		self.contentLayoutManager = [[NSLayoutManager alloc] init];
 		[self.textStorage addLayoutManager:self.contentLayoutManager];
