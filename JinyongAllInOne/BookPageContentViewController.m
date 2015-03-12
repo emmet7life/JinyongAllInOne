@@ -28,7 +28,7 @@
 
 - (void)showPageContent {
 	// 设置内容
-	self.contentView.layoutManager.hyphenationFactor = 1.0;
+//	self.contentView.layoutManager.hyphenationFactor = 1.0;
 	UIEdgeInsets insets = self.contentView.textContainerInset;
 	insets.top = 40;
 	self.contentView.textContainerInset = insets;

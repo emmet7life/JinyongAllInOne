@@ -83,7 +83,7 @@
 	paragraphStyle.headIndent          = 0.f;                    // 段落除了第一行的其他文字离边缘间距
 	paragraphStyle.tailIndent          = 0.f;                    // ???????
 	
-	NSDictionary *attributes = @{NSParagraphStyleAttributeName:paragraphStyle, NSFontAttributeName:[UIFont systemFontOfSize:16.0f], NSForegroundColorAttributeName:[UIColor blackColor]};
+	NSDictionary *attributes = @{NSParagraphStyleAttributeName:paragraphStyle, NSFontAttributeName:[UIFont fontWithName:@"Snell Roundhand" size:16.0f], NSForegroundColorAttributeName:[UIColor blackColor]};
 	return attributes;
 }
 
