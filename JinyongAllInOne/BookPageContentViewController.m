@@ -19,29 +19,32 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+	
+}
+
+- (void)viewDidLayoutSubviews {
+	[super viewDidLayoutSubviews];
 	[self showPageContent];
 }
 
 - (void)showPageContent {
 	// 设置内容
-//	self.contentView.layoutManager.hyphenationFactor = 1.0;
-//	[BookContentDataSource sharedInstance].contentLayoutManager = self.contentView.layoutManager;
+	self.contentView.layoutManager.hyphenationFactor = 1.0;
 //	[BookContentDataSource sharedInstance].contentContainer = self.contentView.textContainer;
-//	[self.contentView.textStorage setAttributedString:[[NSAttributedString alloc] initWithString:[[BookContentDataSource sharedInstance] contentAtPageIndex:self.pageIndex]]];
 	
-//	[self.contentView.textStorage setAttributedString:[BookContentDataSource sharedInstance].textStorage];
+	[self.contentView.textStorage setAttributedString:[[BookContentDataSource sharedInstance] contentAtPageIndex:self.pageIndex withContainerSize:self.contentView.textContainer.size]];
+	[self.contentView.textStorage addAttributes:[[BookContentDataSource sharedInstance] contentAttributes] range:NSMakeRange(0, self.contentView.textStorage.string.length)];
+	
+//	NSLog(@"text view storage === %@", self.contentView.textStorage);
+
+//	NSRange tmpRange = [self.contentView.layoutManager glyphRangeForTextContainer:self.contentView.textContainer];
 //	
-//	[self.contentView.textStorage addAttributes:[[BookContentDataSource sharedInstance] contentAttributes] range:NSMakeRange(0, self.contentView.textStorage.string.length)];
-	
-	[self.contentView.layoutManager addTextContainer:[[BookContentDataSource sharedInstance].contentLayoutManager textContainers][self.pageIndex]];
-	
-//	NSRange range = [self.contentView.layoutManager glyphRangeForTextContainer:self.contentView.textContainer];
-////	NSUInteger glyphs = [self.contentView.layoutManager numberOfGlyphs];
-//	NSLog(@"range loc = %lu, length = %lu", (unsigned long)range.location, (unsigned long)range.length);
-////	NSLog(@"glyphsss == %zd", glyphs);
+//	NSLog(@"tmpRange loc = %lu tmpRange length = %lu", (unsigned long)tmpRange.location, (unsigned long)tmpRange.length);
+//	NSLog(@"text === %@", [string substringWithRange:tmpRange]);
 //	
-//	[self.contentView.layoutManager invalidateDisplayForGlyphRange:range];
-//	[[BookContentDataSource sharedInstance] calculatePageRanges];
+//	NSLog(@"self.contentView.contentSize.height = %f", self.contentView.contentSize.height);
+//	NSLog(@"frame size height = %f", self.contentView.bounds.size.height);
+//	NSLog(@"container size height = %f", self.contentView.textContainer.size.height);
 }
 
 - (void)didReceiveMemoryWarning {

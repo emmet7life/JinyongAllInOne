@@ -10,18 +10,12 @@
 
 @interface BookContentDataSource : NSObject
 
-@property (strong, nonatomic) NSLayoutManager *contentLayoutManager;
-
-@property (assign, nonatomic) NSTextContainer *contentContainer;
-
-@property (strong, nonatomic) NSTextStorage *textStorage;
 
 + (instancetype)sharedInstance;
 
-- (NSString *)contentAtPageIndex:(NSInteger)index;
+- (NSAttributedString *)contentAtPageIndex:(NSInteger)index withContainerSize:(CGSize)size;
 
 - (NSDictionary *)contentAttributes;
 
-- (void)calculatePageRanges;
 
 @end
