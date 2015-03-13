@@ -25,7 +25,6 @@
     // Do any additional setup after loading the view.
 	
 	self.pageViewController = [self.childViewControllers firstObject];
-	
 }
 
 - (void)viewWillAppear:(BOOL)animated {

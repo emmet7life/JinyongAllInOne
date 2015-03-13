@@ -19,6 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+	
+//	UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapContent:)];
+//	[self.view addGestureRecognizer:tapGesture];
 }
 
 - (void)viewDidLayoutSubviews {
@@ -38,6 +41,10 @@
 	[self.contentView.textStorage addAttributes:[[BookContentDataSource sharedInstance] contentAttributes] range:NSMakeRange(0, self.contentView.textStorage.string.length)];
 	
 	
+}
+
+- (void)tapContent:(UITapGestureRecognizer *)tap {
+	[[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
 }
 
 - (void)didReceiveMemoryWarning {
