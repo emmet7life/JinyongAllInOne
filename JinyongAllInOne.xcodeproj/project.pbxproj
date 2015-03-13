@@ -27,6 +27,7 @@
 		B3AD17591AAD6A8A00BF9EDC /* BookContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AD17581AAD6A8A00BF9EDC /* BookContentView.m */; };
 		B3AD175C1AAD811800BF9EDC /* BookMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AD175B1AAD811800BF9EDC /* BookMasterViewController.m */; };
 		B3AD175F1AAD81BC00BF9EDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3AD175D1AAD81BC00BF9EDC /* Main.storyboard */; };
+		C96D198F1AB1D3E70026A1F6 /* 千年诅咒.txt in Resources */ = {isa = PBXBuildFile; fileRef = C96D198E1AB1D3E70026A1F6 /* 千年诅咒.txt */; };
 		C9B54EAC1AAC173A00FE0DF8 /* BookPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B54EA71AAC173A00FE0DF8 /* BookPageViewController.m */; };
 		C9B54EAD1AAC173A00FE0DF8 /* BookPageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B54EA91AAC173A00FE0DF8 /* BookPageContentViewController.m */; };
 /* End PBXBuildFile section */
@@ -105,6 +106,7 @@
 		B3AD175A1AAD811800BF9EDC /* BookMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookMasterViewController.h; sourceTree = "<group>"; };
 		B3AD175B1AAD811800BF9EDC /* BookMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookMasterViewController.m; sourceTree = "<group>"; };
 		B3AD175E1AAD81BC00BF9EDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C96D198E1AB1D3E70026A1F6 /* 千年诅咒.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "千年诅咒.txt"; sourceTree = "<group>"; };
 		C9B54EA71AAC173A00FE0DF8 /* BookPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookPageViewController.m; sourceTree = "<group>"; };
 		C9B54EA81AAC173A00FE0DF8 /* BookPageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookPageContentViewController.h; sourceTree = "<group>"; };
 		C9B54EA91AAC173A00FE0DF8 /* BookPageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookPageContentViewController.m; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 				B36D25E31AA7F1ED00EB0424 /* Info.plist */,
 				B36D25E41AA7F1ED00EB0424 /* main.m */,
 				B3658A171AAFE364008E8F6D /* 雪山飞狐.txt */,
+				C96D198E1AB1D3E70026A1F6 /* 千年诅咒.txt */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -340,9 +343,11 @@
 					};
 					B355C94C1AAE881200A4E62B = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 64P64NSS5N;
 					};
 					B36D25DE1AA7F1ED00EB0424 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 64P64NSS5N;
 					};
 					B36D25FA1AA7F1ED00EB0424 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -398,6 +403,7 @@
 				B36D25F61AA7F1ED00EB0424 /* LaunchScreen.xib in Resources */,
 				B36D25F31AA7F1ED00EB0424 /* Images.xcassets in Resources */,
 				B3658A181AAFE364008E8F6D /* 雪山飞狐.txt in Resources */,
+				C96D198F1AB1D3E70026A1F6 /* 千年诅咒.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,10 +640,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = JinyongAllInOne/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -646,10 +654,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = JinyongAllInOne/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
