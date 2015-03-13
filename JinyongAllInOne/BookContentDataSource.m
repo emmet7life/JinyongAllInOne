@@ -69,7 +69,15 @@
 	return [self.textStorage attributedSubstringFromRange:range];
 }
 
-
+- (NSUInteger)maxPageCount {
+	NSTextContainer *container = [[NSTextContainer alloc] initWithSize:CGSizeMake([[UIScreen mainScreen] applicationFrame].size.width, FLT_MAX)];
+	[self.contentLayoutManager addTextContainer:container];
+	CGRect frame = [self.contentLayoutManager boundingRectForGlyphRange:NSMakeRange(0, [self.contentLayoutManager numberOfGlyphs]) inTextContainer:container];
+	[self.contentLayoutManager removeTextContainerAtIndex:[self.contentLayoutManager.textContainers count] - 1];
+	NSUInteger maxPageCount = frame.size.height / [[UIScreen mainScreen] applicationFrame].size.height + 1;
+	NSLog(@"max page count = %zd", maxPageCount);
+	return maxPageCount;
+}
 
 - (NSDictionary *)contentAttributes {
 	NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
@@ -83,7 +91,8 @@
 	paragraphStyle.headIndent          = 0.f;                    // 段落除了第一行的其他文字离边缘间距
 	paragraphStyle.tailIndent          = 0.f;                    // ???????
 	
-	NSDictionary *attributes = @{NSParagraphStyleAttributeName:paragraphStyle, NSFontAttributeName:[UIFont fontWithName:@"Snell Roundhand" size:16.0f], NSForegroundColorAttributeName:[UIColor blackColor]};
+//	NSDictionary *attributes = @{NSParagraphStyleAttributeName:paragraphStyle, NSFontAttributeName:[UIFont fontWithName:@"Snell Roundhand" size:16.0f], NSForegroundColorAttributeName:[UIColor blackColor]};
+	NSDictionary *attributes = @{NSParagraphStyleAttributeName:paragraphStyle, NSFontAttributeName:[UIFont systemFontOfSize:16.0f], NSForegroundColorAttributeName:[UIColor blackColor]};
 	return attributes;
 }
 

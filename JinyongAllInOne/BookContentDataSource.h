@@ -17,5 +17,6 @@
 
 - (NSDictionary *)contentAttributes;
 
+- (NSUInteger)maxPageCount;
 
 @end

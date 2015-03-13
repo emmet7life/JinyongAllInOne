@@ -8,6 +8,7 @@
 
 #import "BookPageViewController.h"
 #import "BookPageContentViewController.h"
+#import "BookContentDataSource.h"
 
 @interface BookPageViewController ()
 
@@ -22,7 +23,7 @@
 	self.dataSource = self;
 	//从第一页开始计算页码，但是封面是第0页
 	self.currentPageIndex = 0;
-	self.maxPageCount = 10;
+	self.maxPageCount = [[BookContentDataSource sharedInstance] maxPageCount];
 	
     // 设置书籍的第一页
     [self setViewControllers:@[[self.storyboard instantiateViewControllerWithIdentifier:@"BookPageContentViewController"]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:^(BOOL finished) {

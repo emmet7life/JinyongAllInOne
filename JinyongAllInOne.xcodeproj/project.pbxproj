@@ -347,7 +347,6 @@
 					};
 					B36D25DE1AA7F1ED00EB0424 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = 64P64NSS5N;
 					};
 					B36D25FA1AA7F1ED00EB0424 = {
 						CreatedOnToolsVersion = 6.1.1;

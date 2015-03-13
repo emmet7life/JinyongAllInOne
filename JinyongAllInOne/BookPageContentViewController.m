@@ -26,22 +26,20 @@
 
 - (void)viewDidLayoutSubviews {
 	[super viewDidLayoutSubviews];
-        
 	[self showPageContent];
 }
 
 - (void)showPageContent {
 	// 设置内容
-//	self.contentView.layoutManager.hyphenationFactor = 1.0;
-	UIEdgeInsets insets = self.contentView.textContainerInset;
-	insets.top = 40;
-	self.contentView.textContainerInset = insets;
-	
 	[self.contentView.textStorage setAttributedString:[[BookContentDataSource sharedInstance] contentAtPageIndex:self.pageIndex withContainerSize:self.contentView.textContainer.size]];
 	
-	[self.contentView.textStorage addAttributes:[[BookContentDataSource sharedInstance] contentAttributes] range:NSMakeRange(0, self.contentView.textStorage.string.length)];
+//	self.contentView.text = @"http://www.baidu.com/";
+//	NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString:@"Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."];
+//	[text addAttribute:NSLinkAttributeName value:@"myurl://tapped" range:NSMakeRange(6, 16)];
 	
+//	[self.contentView.textStorage addAttribute:NSLinkAttributeName value:@"jinyongaio://show.remark" range:NSMakeRange(0, 20)];
 	
+//	self.contentView.attributedText = text;
 }
 
 - (void)tapContent:(UITapGestureRecognizer *)tap {
