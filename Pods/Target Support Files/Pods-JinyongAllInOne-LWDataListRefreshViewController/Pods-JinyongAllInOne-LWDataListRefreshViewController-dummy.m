@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_JinyongAllInOne_LWDataListRefreshViewController : NSObject
+@end
+@implementation PodsDummy_Pods_JinyongAllInOne_LWDataListRefreshViewController
+@end

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		412909B111C5B20AFB2258E6 /* libPods-JinyongAllInOne.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F8E7E5C2E7FE9BBE1D05CF /* libPods-JinyongAllInOne.a */; };
+		B35405451AE0E62F001E55F4 /* BookShelfCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B354053C1AE0E62F001E55F4 /* BookShelfCollectionView.m */; };
+		B35405461AE0E62F001E55F4 /* BookShelfCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B354053E1AE0E62F001E55F4 /* BookShelfCollectionViewCell.m */; };
+		B35405471AE0E62F001E55F4 /* BookShelfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B35405401AE0E62F001E55F4 /* BookShelfViewController.m */; };
+		B35405481AE0E62F001E55F4 /* BookShelfCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B35405421AE0E62F001E55F4 /* BookShelfCollectionViewLayout.m */; };
+		B35405491AE0E62F001E55F4 /* BookShelfViewLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = B35405441AE0E62F001E55F4 /* BookShelfViewLayoutAttributes.m */; };
+		B354054C1AE0F8CD001E55F4 /* BookShelfDecorationView.m in Sources */ = {isa = PBXBuildFile; fileRef = B354054B1AE0F8CD001E55F4 /* BookShelfDecorationView.m */; };
 		B355C9421AAE881100A4E62B /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = B355C9411AAE881100A4E62B /* InterfaceController.m */; };
 		B355C9451AAE881100A4E62B /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B355C9441AAE881100A4E62B /* NotificationController.m */; };
 		B355C9481AAE881100A4E62B /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = B355C9471AAE881100A4E62B /* GlanceController.m */; };
@@ -71,6 +78,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		42F8E7E5C2E7FE9BBE1D05CF /* libPods-JinyongAllInOne.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JinyongAllInOne.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79C14252712467C92B1B033A /* Pods-JinyongAllInOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JinyongAllInOne.release.xcconfig"; path = "Pods/Target Support Files/Pods-JinyongAllInOne/Pods-JinyongAllInOne.release.xcconfig"; sourceTree = "<group>"; };
+		B354053B1AE0E62F001E55F4 /* BookShelfCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookShelfCollectionView.h; sourceTree = "<group>"; };
+		B354053C1AE0E62F001E55F4 /* BookShelfCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookShelfCollectionView.m; sourceTree = "<group>"; };
+		B354053D1AE0E62F001E55F4 /* BookShelfCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookShelfCollectionViewCell.h; sourceTree = "<group>"; };
+		B354053E1AE0E62F001E55F4 /* BookShelfCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookShelfCollectionViewCell.m; sourceTree = "<group>"; };
+		B354053F1AE0E62F001E55F4 /* BookShelfViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookShelfViewController.h; sourceTree = "<group>"; };
+		B35405401AE0E62F001E55F4 /* BookShelfViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookShelfViewController.m; sourceTree = "<group>"; };
+		B35405411AE0E62F001E55F4 /* BookShelfCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookShelfCollectionViewLayout.h; sourceTree = "<group>"; };
+		B35405421AE0E62F001E55F4 /* BookShelfCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookShelfCollectionViewLayout.m; sourceTree = "<group>"; };
+		B35405431AE0E62F001E55F4 /* BookShelfViewLayoutAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookShelfViewLayoutAttributes.h; sourceTree = "<group>"; };
+		B35405441AE0E62F001E55F4 /* BookShelfViewLayoutAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookShelfViewLayoutAttributes.m; sourceTree = "<group>"; };
+		B354054A1AE0F8CD001E55F4 /* BookShelfDecorationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookShelfDecorationView.h; sourceTree = "<group>"; };
+		B354054B1AE0F8CD001E55F4 /* BookShelfDecorationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookShelfDecorationView.m; sourceTree = "<group>"; };
 		B355C93B1AAE881100A4E62B /* JinyongAllInOne WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "JinyongAllInOne WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B355C93E1AAE881100A4E62B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B355C93F1AAE881100A4E62B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
@@ -111,6 +132,7 @@
 		C9B54EA81AAC173A00FE0DF8 /* BookPageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookPageContentViewController.h; sourceTree = "<group>"; };
 		C9B54EA91AAC173A00FE0DF8 /* BookPageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookPageContentViewController.m; sourceTree = "<group>"; };
 		C9B54EAA1AAC173A00FE0DF8 /* BookPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookPageViewController.h; sourceTree = "<group>"; };
+		D69C3B121D8B1599418FE81F /* Pods-JinyongAllInOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JinyongAllInOne.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JinyongAllInOne/Pods-JinyongAllInOne.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				412909B111C5B20AFB2258E6 /* libPods-JinyongAllInOne.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +161,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B354053A1AE0E62F001E55F4 /* BookShelf */ = {
+			isa = PBXGroup;
+			children = (
+				B354053F1AE0E62F001E55F4 /* BookShelfViewController.h */,
+				B35405401AE0E62F001E55F4 /* BookShelfViewController.m */,
+				B354053B1AE0E62F001E55F4 /* BookShelfCollectionView.h */,
+				B354053C1AE0E62F001E55F4 /* BookShelfCollectionView.m */,
+				B354053D1AE0E62F001E55F4 /* BookShelfCollectionViewCell.h */,
+				B354053E1AE0E62F001E55F4 /* BookShelfCollectionViewCell.m */,
+				B35405411AE0E62F001E55F4 /* BookShelfCollectionViewLayout.h */,
+				B35405421AE0E62F001E55F4 /* BookShelfCollectionViewLayout.m */,
+				B35405431AE0E62F001E55F4 /* BookShelfViewLayoutAttributes.h */,
+				B35405441AE0E62F001E55F4 /* BookShelfViewLayoutAttributes.m */,
+				B354054A1AE0F8CD001E55F4 /* BookShelfDecorationView.h */,
+				B354054B1AE0F8CD001E55F4 /* BookShelfDecorationView.m */,
+			);
+			path = BookShelf;
+			sourceTree = "<group>";
+		};
 		B355C93C1AAE881100A4E62B /* JinyongAllInOne WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +230,8 @@
 				B355C93C1AAE881100A4E62B /* JinyongAllInOne WatchKit Extension */,
 				B355C9511AAE881200A4E62B /* JinyongAllInOne WatchKit App */,
 				B36D25E01AA7F1ED00EB0424 /* Products */,
+				C91D245AEC972752D1465196 /* Pods */,
+				F4C03603E1636CC502D32CA4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -209,6 +253,7 @@
 				B36D25E71AA7F1ED00EB0424 /* AppDelegate.m */,
 				B36D25EC1AA7F1ED00EB0424 /* ViewController.h */,
 				B36D25ED1AA7F1ED00EB0424 /* ViewController.m */,
+				B354053A1AE0E62F001E55F4 /* BookShelf */,
 				B3AD175A1AAD811800BF9EDC /* BookMasterViewController.h */,
 				B3AD175B1AAD811800BF9EDC /* BookMasterViewController.m */,
 				C9B54EAA1AAC173A00FE0DF8 /* BookPageViewController.h */,
@@ -219,8 +264,6 @@
 				B3658A1A1AAFEE71008E8F6D /* BookContentDataSource.m */,
 				B3AD17571AAD6A8A00BF9EDC /* BookContentView.h */,
 				B3AD17581AAD6A8A00BF9EDC /* BookContentView.m */,
-				B36D25F21AA7F1ED00EB0424 /* Images.xcassets */,
-				B36D25E91AA7F1ED00EB0424 /* JinyongAllInOne.xcdatamodeld */,
 				B3AD175D1AAD81BC00BF9EDC /* Main.storyboard */,
 				B36D25E21AA7F1ED00EB0424 /* Supporting Files */,
 			);
@@ -231,6 +274,8 @@
 			isa = PBXGroup;
 			children = (
 				B36D25F41AA7F1ED00EB0424 /* LaunchScreen.xib */,
+				B36D25F21AA7F1ED00EB0424 /* Images.xcassets */,
+				B36D25E91AA7F1ED00EB0424 /* JinyongAllInOne.xcdatamodeld */,
 				B36D25E31AA7F1ED00EB0424 /* Info.plist */,
 				B36D25E41AA7F1ED00EB0424 /* main.m */,
 				B3658A171AAFE364008E8F6D /* 雪山飞狐.txt */,
@@ -254,6 +299,23 @@
 				B36D26001AA7F1EE00EB0424 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C91D245AEC972752D1465196 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D69C3B121D8B1599418FE81F /* Pods-JinyongAllInOne.debug.xcconfig */,
+				79C14252712467C92B1B033A /* Pods-JinyongAllInOne.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F4C03603E1636CC502D32CA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42F8E7E5C2E7FE9BBE1D05CF /* libPods-JinyongAllInOne.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,10 +358,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B36D26051AA7F1EE00EB0424 /* Build configuration list for PBXNativeTarget "JinyongAllInOne" */;
 			buildPhases = (
+				2DDF211F1BCDB44EBCEC6D9B /* Check Pods Manifest.lock */,
 				B36D25DB1AA7F1ED00EB0424 /* Sources */,
 				B36D25DC1AA7F1ED00EB0424 /* Frameworks */,
 				B36D25DD1AA7F1ED00EB0424 /* Resources */,
 				B355C9621AAE881200A4E62B /* Embed App Extensions */,
+				836393C7535CC9E8E4C8D9A0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -415,6 +479,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2DDF211F1BCDB44EBCEC6D9B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		836393C7535CC9E8E4C8D9A0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JinyongAllInOne/Pods-JinyongAllInOne-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B355C9371AAE881100A4E62B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -430,15 +527,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B35405451AE0E62F001E55F4 /* BookShelfCollectionView.m in Sources */,
 				C9B54EAD1AAC173A00FE0DF8 /* BookPageContentViewController.m in Sources */,
+				B35405481AE0E62F001E55F4 /* BookShelfCollectionViewLayout.m in Sources */,
 				B3658A1B1AAFEE71008E8F6D /* BookContentDataSource.m in Sources */,
 				B36D25E81AA7F1ED00EB0424 /* AppDelegate.m in Sources */,
+				B354054C1AE0F8CD001E55F4 /* BookShelfDecorationView.m in Sources */,
 				B36D25E51AA7F1ED00EB0424 /* main.m in Sources */,
 				C9B54EAC1AAC173A00FE0DF8 /* BookPageViewController.m in Sources */,
 				B36D25EE1AA7F1ED00EB0424 /* ViewController.m in Sources */,
+				B35405461AE0E62F001E55F4 /* BookShelfCollectionViewCell.m in Sources */,
+				B35405471AE0E62F001E55F4 /* BookShelfViewController.m in Sources */,
 				B3AD17591AAD6A8A00BF9EDC /* BookContentView.m in Sources */,
 				B3AD175C1AAD811800BF9EDC /* BookMasterViewController.m in Sources */,
 				B36D25EB1AA7F1ED00EB0424 /* JinyongAllInOne.xcdatamodeld in Sources */,
+				B35405491AE0E62F001E55F4 /* BookShelfViewLayoutAttributes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,6 +739,7 @@
 		};
 		B36D26061AA7F1EE00EB0424 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D69C3B121D8B1599418FE81F /* Pods-JinyongAllInOne.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -650,6 +754,7 @@
 		};
 		B36D26071AA7F1EE00EB0424 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79C14252712467C92B1B033A /* Pods-JinyongAllInOne.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

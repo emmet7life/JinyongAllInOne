@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jn5-Vz-ECB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NQv-dD-dgH">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
         <!--Book Page View Controller-->
@@ -41,6 +41,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PUf-R4-zFS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1086" y="-507"/>
+        </scene>
+        <!--我的书架-->
+        <scene sceneID="Bpy-2G-1vf">
+            <objects>
+                <viewController id="iI3-J8-Npj" customClass="BookShelfViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cgX-XN-Lyt"/>
+                        <viewControllerLayoutGuide type="bottom" id="ATx-yO-uwO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Eld-Eg-Cwf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aHU-Qs-5Ca" customClass="BookShelfCollectionView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <collectionViewLayout key="collectionViewLayout" id="5m5-8i-Dvo" customClass="BookShelfCollectionViewLayout"/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="kJH-vw-OM0" customClass="BookShelfCollectionViewCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="iI3-J8-Npj" id="Ku2-8h-NzO"/>
+                                    <outlet property="delegate" destination="iI3-J8-Npj" id="fKe-yy-kvt"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aHU-Qs-5Ca" firstAttribute="leading" secondItem="Eld-Eg-Cwf" secondAttribute="leading" id="ENz-53-bES"/>
+                            <constraint firstItem="ATx-yO-uwO" firstAttribute="top" secondItem="aHU-Qs-5Ca" secondAttribute="bottom" id="dfZ-s6-no5"/>
+                            <constraint firstItem="aHU-Qs-5Ca" firstAttribute="top" secondItem="Eld-Eg-Cwf" secondAttribute="top" id="pyg-yh-Dhc"/>
+                            <constraint firstAttribute="trailing" secondItem="aHU-Qs-5Ca" secondAttribute="trailing" id="xo9-FR-OIu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="我的书架" id="cKm-10-txf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U6O-3q-Ss2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1752" y="245"/>
         </scene>
         <!--Book Master View Controller-->
         <scene sceneID="aGP-Hv-pwC">
@@ -108,7 +154,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1pw-qK-ldi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1802" y="263"/>
+            <point key="canvasLocation" x="2614" y="263"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2QH-iu-pRN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NQv-dD-dgH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KAv-ev-R3s">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iI3-J8-Npj" kind="relationship" relationship="rootViewController" id="tnT-fS-qem"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Dx-e4-tia" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="940" y="245"/>
         </scene>
     </scenes>
 </document>
