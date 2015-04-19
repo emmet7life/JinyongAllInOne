@@ -12,6 +12,4 @@
 
 @property (strong, nonatomic) UIImageView *bgView;;
 
-+ (NSString *)reuseIdentifier;
-
 @end

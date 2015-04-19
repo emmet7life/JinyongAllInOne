@@ -17,15 +17,16 @@
 //		[self setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"BookShelfCellLeft"]]];
 //		self.layer.shadowOpacity = 0.5;
 //		self.layer.shadowOffset = CGSizeMake(0,5);
-		
+        self.bgView.frame = frame;
+//        self.
 	}
 	return self;
 }
 
-- (void)setFrame:(CGRect)frame {
-	[super setFrame:frame];
-	self.bgView.frame = frame;
-}
+//- (void)setFrame:(CGRect)frame {
+//	[super setFrame:frame];
+//	self.bgView.frame = frame;
+//}
 
 - (UIImageView *)bgView {
 	if (_bgView == nil) {
@@ -41,8 +42,8 @@
 //	
 //}
 
-+ (NSString *)reuseIdentifier {
-	return NSStringFromClass([self class]);
+- (void)applyLayoutAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes {
+    [super applyLayoutAttributes:layoutAttributes];
 }
 
 @end

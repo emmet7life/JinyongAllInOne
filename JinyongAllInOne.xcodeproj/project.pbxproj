@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		412909B111C5B20AFB2258E6 /* libPods-JinyongAllInOne.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F8E7E5C2E7FE9BBE1D05CF /* libPods-JinyongAllInOne.a */; };
 		B35405451AE0E62F001E55F4 /* BookShelfCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B354053C1AE0E62F001E55F4 /* BookShelfCollectionView.m */; };
-		B35405461AE0E62F001E55F4 /* BookShelfCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B354053E1AE0E62F001E55F4 /* BookShelfCollectionViewCell.m */; };
 		B35405471AE0E62F001E55F4 /* BookShelfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B35405401AE0E62F001E55F4 /* BookShelfViewController.m */; };
 		B35405481AE0E62F001E55F4 /* BookShelfCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B35405421AE0E62F001E55F4 /* BookShelfCollectionViewLayout.m */; };
 		B35405491AE0E62F001E55F4 /* BookShelfViewLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = B35405441AE0E62F001E55F4 /* BookShelfViewLayoutAttributes.m */; };
@@ -35,6 +34,8 @@
 		B3AD175C1AAD811800BF9EDC /* BookMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AD175B1AAD811800BF9EDC /* BookMasterViewController.m */; };
 		B3AD175F1AAD81BC00BF9EDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3AD175D1AAD81BC00BF9EDC /* Main.storyboard */; };
 		C96D198F1AB1D3E70026A1F6 /* 千年诅咒.txt in Resources */ = {isa = PBXBuildFile; fileRef = C96D198E1AB1D3E70026A1F6 /* 千年诅咒.txt */; };
+		C998C1F61AE16EE900150D42 /* BookShelfCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C998C1F41AE16EE900150D42 /* BookShelfCollectionViewCell.m */; };
+		C998C1F71AE16EE900150D42 /* BookShelfCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C998C1F51AE16EE900150D42 /* BookShelfCollectionViewCell.xib */; };
 		C9B54EAC1AAC173A00FE0DF8 /* BookPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B54EA71AAC173A00FE0DF8 /* BookPageViewController.m */; };
 		C9B54EAD1AAC173A00FE0DF8 /* BookPageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B54EA91AAC173A00FE0DF8 /* BookPageContentViewController.m */; };
 /* End PBXBuildFile section */
@@ -82,8 +83,6 @@
 		79C14252712467C92B1B033A /* Pods-JinyongAllInOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JinyongAllInOne.release.xcconfig"; path = "Pods/Target Support Files/Pods-JinyongAllInOne/Pods-JinyongAllInOne.release.xcconfig"; sourceTree = "<group>"; };
 		B354053B1AE0E62F001E55F4 /* BookShelfCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookShelfCollectionView.h; sourceTree = "<group>"; };
 		B354053C1AE0E62F001E55F4 /* BookShelfCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookShelfCollectionView.m; sourceTree = "<group>"; };
-		B354053D1AE0E62F001E55F4 /* BookShelfCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookShelfCollectionViewCell.h; sourceTree = "<group>"; };
-		B354053E1AE0E62F001E55F4 /* BookShelfCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookShelfCollectionViewCell.m; sourceTree = "<group>"; };
 		B354053F1AE0E62F001E55F4 /* BookShelfViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookShelfViewController.h; sourceTree = "<group>"; };
 		B35405401AE0E62F001E55F4 /* BookShelfViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookShelfViewController.m; sourceTree = "<group>"; };
 		B35405411AE0E62F001E55F4 /* BookShelfCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookShelfCollectionViewLayout.h; sourceTree = "<group>"; };
@@ -128,6 +127,9 @@
 		B3AD175B1AAD811800BF9EDC /* BookMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookMasterViewController.m; sourceTree = "<group>"; };
 		B3AD175E1AAD81BC00BF9EDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C96D198E1AB1D3E70026A1F6 /* 千年诅咒.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "千年诅咒.txt"; sourceTree = "<group>"; };
+		C998C1F31AE16EE900150D42 /* BookShelfCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookShelfCollectionViewCell.h; sourceTree = "<group>"; };
+		C998C1F41AE16EE900150D42 /* BookShelfCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookShelfCollectionViewCell.m; sourceTree = "<group>"; };
+		C998C1F51AE16EE900150D42 /* BookShelfCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookShelfCollectionViewCell.xib; sourceTree = "<group>"; };
 		C9B54EA71AAC173A00FE0DF8 /* BookPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookPageViewController.m; sourceTree = "<group>"; };
 		C9B54EA81AAC173A00FE0DF8 /* BookPageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookPageContentViewController.h; sourceTree = "<group>"; };
 		C9B54EA91AAC173A00FE0DF8 /* BookPageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookPageContentViewController.m; sourceTree = "<group>"; };
@@ -168,8 +170,9 @@
 				B35405401AE0E62F001E55F4 /* BookShelfViewController.m */,
 				B354053B1AE0E62F001E55F4 /* BookShelfCollectionView.h */,
 				B354053C1AE0E62F001E55F4 /* BookShelfCollectionView.m */,
-				B354053D1AE0E62F001E55F4 /* BookShelfCollectionViewCell.h */,
-				B354053E1AE0E62F001E55F4 /* BookShelfCollectionViewCell.m */,
+				C998C1F31AE16EE900150D42 /* BookShelfCollectionViewCell.h */,
+				C998C1F41AE16EE900150D42 /* BookShelfCollectionViewCell.m */,
+				C998C1F51AE16EE900150D42 /* BookShelfCollectionViewCell.xib */,
 				B35405411AE0E62F001E55F4 /* BookShelfCollectionViewLayout.h */,
 				B35405421AE0E62F001E55F4 /* BookShelfCollectionViewLayout.m */,
 				B35405431AE0E62F001E55F4 /* BookShelfViewLayoutAttributes.h */,
@@ -253,6 +256,7 @@
 				B36D25E71AA7F1ED00EB0424 /* AppDelegate.m */,
 				B36D25EC1AA7F1ED00EB0424 /* ViewController.h */,
 				B36D25ED1AA7F1ED00EB0424 /* ViewController.m */,
+				B3AD175D1AAD81BC00BF9EDC /* Main.storyboard */,
 				B354053A1AE0E62F001E55F4 /* BookShelf */,
 				B3AD175A1AAD811800BF9EDC /* BookMasterViewController.h */,
 				B3AD175B1AAD811800BF9EDC /* BookMasterViewController.m */,
@@ -264,7 +268,6 @@
 				B3658A1A1AAFEE71008E8F6D /* BookContentDataSource.m */,
 				B3AD17571AAD6A8A00BF9EDC /* BookContentView.h */,
 				B3AD17581AAD6A8A00BF9EDC /* BookContentView.m */,
-				B3AD175D1AAD81BC00BF9EDC /* Main.storyboard */,
 				B36D25E21AA7F1ED00EB0424 /* Supporting Files */,
 			);
 			path = JinyongAllInOne;
@@ -464,6 +467,7 @@
 			files = (
 				B3AD175F1AAD81BC00BF9EDC /* Main.storyboard in Resources */,
 				B36D25F61AA7F1ED00EB0424 /* LaunchScreen.xib in Resources */,
+				C998C1F71AE16EE900150D42 /* BookShelfCollectionViewCell.xib in Resources */,
 				B36D25F31AA7F1ED00EB0424 /* Images.xcassets in Resources */,
 				B3658A181AAFE364008E8F6D /* 雪山飞狐.txt in Resources */,
 				C96D198F1AB1D3E70026A1F6 /* 千年诅咒.txt in Resources */,
@@ -536,8 +540,8 @@
 				B36D25E51AA7F1ED00EB0424 /* main.m in Sources */,
 				C9B54EAC1AAC173A00FE0DF8 /* BookPageViewController.m in Sources */,
 				B36D25EE1AA7F1ED00EB0424 /* ViewController.m in Sources */,
-				B35405461AE0E62F001E55F4 /* BookShelfCollectionViewCell.m in Sources */,
 				B35405471AE0E62F001E55F4 /* BookShelfViewController.m in Sources */,
+				C998C1F61AE16EE900150D42 /* BookShelfCollectionViewCell.m in Sources */,
 				B3AD17591AAD6A8A00BF9EDC /* BookContentView.m in Sources */,
 				B3AD175C1AAD811800BF9EDC /* BookMasterViewController.m in Sources */,
 				B36D25EB1AA7F1ED00EB0424 /* JinyongAllInOne.xcdatamodeld in Sources */,

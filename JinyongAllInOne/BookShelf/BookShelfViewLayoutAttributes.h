@@ -10,6 +10,5 @@
 
 @interface BookShelfViewLayoutAttributes : UICollectionViewLayoutAttributes
 
-@property (strong, nonatomic) UIImageView *backgroundImageView;
 
 @end

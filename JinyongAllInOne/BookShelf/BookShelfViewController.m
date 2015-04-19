@@ -7,9 +7,12 @@
 //
 
 #import "BookShelfViewController.h"
+#import "BookShelfCollectionView.h"
 #import "BookShelfCollectionViewCell.h"
 
 @interface BookShelfViewController ()
+
+@property (weak, nonatomic) IBOutlet BookShelfCollectionView *collectionView;
 
 @end
 
@@ -18,8 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-//	UINib *cellNib = [UINib nibWithNibName:@"TFExamPaperView" bundle:nil];
-//	[self.collectionView registerNib:cellNib forCellWithReuseIdentifier:@"Cell"];
+	UINib *cellNib = [UINib nibWithNibName:@"BookShelfCollectionViewCell" bundle:nil];
+	[self.collectionView registerNib:cellNib forCellWithReuseIdentifier:@"Cell"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,10 +40,14 @@
 }
 */
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    [self.collectionView.collectionViewLayout invalidateLayout];
+}
+
 #pragma mark - UICollectionViewDataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-	return 12;
+	return 50;
 //	return [self.books count];
 }
 
@@ -61,6 +68,7 @@
 //			break;
 //	}
 //	cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:imgName]];
+//    [cell layoutIfNeeded];
 	return cell;
 }
 
@@ -93,10 +101,9 @@
 //	
 //	return reusableView;
 //}
-//
-//- (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath {
-//	UICollectionViewLayoutAttributes *layoutAttibutes = [self.collectionView layoutAttributesForItemAtIndexPath:indexPath];
-//	return layoutAttibutes;
+
+//- (void)collectionView:(UICollectionView *)collectionView willDisplaySupplementaryView:(UICollectionReusableView *)view forElementKind:(NSString *)elementKind atIndexPath:(NSIndexPath *)indexPath {
+//    [collectionView.collectionViewLayout invalidateLayout];
 //}
 
 @end
