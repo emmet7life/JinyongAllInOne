@@ -16,6 +16,14 @@
 	return newAttributes;
 }
 
+- (BOOL)isEqual:(id)object {
+    BookShelfViewLayoutAttributes *objectAttributes = (BookShelfViewLayoutAttributes *)object;
+    if (objectAttributes.indexPath == self.indexPath) {
+        return YES;
+    }
+    return NO;
+}
+
 + (instancetype)layoutAttributesForDecorationViewOfKind:(NSString *)decorationViewKind withIndexPath:(NSIndexPath *)indexPath {
 	return [super layoutAttributesForDecorationViewOfKind:decorationViewKind withIndexPath:indexPath];
 }

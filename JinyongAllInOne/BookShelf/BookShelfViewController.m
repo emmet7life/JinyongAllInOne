@@ -10,6 +10,8 @@
 #import "BookShelfCollectionView.h"
 #import "BookShelfCollectionViewCell.h"
 
+#import "BookMasterViewController.h"
+
 @interface BookShelfViewController ()
 
 @property (weak, nonatomic) IBOutlet BookShelfCollectionView *collectionView;
@@ -26,7 +28,7 @@
 	
 	self.books = [[NSMutableArray alloc] initWithCapacity:20];
 	
-	for (int i = 0; i < 50; i++) {
+	for (int i = 0; i < 40; i++) {
 		NSNumber *number = @(i);
 		[self.books addObject:number];
 	}
@@ -47,10 +49,6 @@
     // Pass the selected object to the new view controller.
 }
 */
-
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-	[self.collectionView layoutIfNeeded];
-}
 
 #pragma mark - UICollectionViewDataSource
 
@@ -82,10 +80,8 @@
 #pragma mark - UICollectionViewDelegate
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-//	TFExamPaperDetailViewController *detail = [self.storyboard instantiateViewControllerWithIdentifier:@"TFExamPaperDetailViewController"];
-//	detail.paperId = self.papers[indexPath.row][@"id"];
-//	detail.navigationItem.title = self.papers[indexPath.row][@"title"];
-//	[self.navigationController pushViewController:detail animated:YES];
+    BookMasterViewController *master = [self.storyboard instantiateViewControllerWithIdentifier:@"BookMasterViewController"];
+    [self.navigationController pushViewController:master animated:YES];
 }
 
 //- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
@@ -103,5 +99,6 @@
 //- (void)collectionView:(UICollectionView *)collectionView willDisplaySupplementaryView:(UICollectionReusableView *)view forElementKind:(NSString *)elementKind atIndexPath:(NSIndexPath *)indexPath {
 //    [collectionView.collectionViewLayout invalidateLayout];
 //}
+
 
 @end

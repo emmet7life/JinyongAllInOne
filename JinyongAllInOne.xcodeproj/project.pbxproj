@@ -298,16 +298,16 @@
 		B3AD1D651AE61F4E00FF0ABB /* BookReader */ = {
 			isa = PBXGroup;
 			children = (
-				B3AD1D661AE61F4E00FF0ABB /* BookContentDataSource.h */,
-				B3AD1D671AE61F4E00FF0ABB /* BookContentDataSource.m */,
-				B3AD1D681AE61F4E00FF0ABB /* BookContentView.h */,
-				B3AD1D691AE61F4E00FF0ABB /* BookContentView.m */,
 				B3AD1D6A1AE61F4E00FF0ABB /* BookMasterViewController.h */,
 				B3AD1D6B1AE61F4E00FF0ABB /* BookMasterViewController.m */,
+				B3AD1D681AE61F4E00FF0ABB /* BookContentView.h */,
+				B3AD1D691AE61F4E00FF0ABB /* BookContentView.m */,
 				B3AD1D6C1AE61F4E00FF0ABB /* BookPageContentViewController.h */,
 				B3AD1D6D1AE61F4E00FF0ABB /* BookPageContentViewController.m */,
 				B3AD1D6E1AE61F4E00FF0ABB /* BookPageViewController.h */,
 				B3AD1D6F1AE61F4E00FF0ABB /* BookPageViewController.m */,
+				B3AD1D661AE61F4E00FF0ABB /* BookContentDataSource.h */,
+				B3AD1D671AE61F4E00FF0ABB /* BookContentDataSource.m */,
 			);
 			path = BookReader;
 			sourceTree = "<group>";

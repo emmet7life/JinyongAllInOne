@@ -19,9 +19,7 @@
 	layout.numberOfItemsPerLine = 3;
 	layout.aspectRatio = 4.0 / 5.0;
 	layout.interitemSpacing = 0;
-	layout.lineSpacing = 0;
-	
-//    [self.collectionViewLayout invalidateLayout];
+	layout.lineSpacing = 0;	
 }
 
 /*
