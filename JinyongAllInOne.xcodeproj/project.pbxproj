@@ -22,7 +22,6 @@
 		B355C9581AAE881200A4E62B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B355C9571AAE881200A4E62B /* Images.xcassets */; };
 		B355C95B1AAE881200A4E62B /* JinyongAllInOne WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B355C93B1AAE881100A4E62B /* JinyongAllInOne WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B3658A181AAFE364008E8F6D /* 雪山飞狐.txt in Resources */ = {isa = PBXBuildFile; fileRef = B3658A171AAFE364008E8F6D /* 雪山飞狐.txt */; };
-		B3658A1B1AAFEE71008E8F6D /* BookContentDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B3658A1A1AAFEE71008E8F6D /* BookContentDataSource.m */; };
 		B36D25E51AA7F1ED00EB0424 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B36D25E41AA7F1ED00EB0424 /* main.m */; };
 		B36D25E81AA7F1ED00EB0424 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B36D25E71AA7F1ED00EB0424 /* AppDelegate.m */; };
 		B36D25EB1AA7F1ED00EB0424 /* JinyongAllInOne.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B36D25E91AA7F1ED00EB0424 /* JinyongAllInOne.xcdatamodeld */; };
@@ -30,14 +29,15 @@
 		B36D25F31AA7F1ED00EB0424 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B36D25F21AA7F1ED00EB0424 /* Images.xcassets */; };
 		B36D25F61AA7F1ED00EB0424 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B36D25F41AA7F1ED00EB0424 /* LaunchScreen.xib */; };
 		B36D26021AA7F1EE00EB0424 /* JinyongAllInOneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B36D26011AA7F1EE00EB0424 /* JinyongAllInOneTests.m */; };
-		B3AD17591AAD6A8A00BF9EDC /* BookContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AD17581AAD6A8A00BF9EDC /* BookContentView.m */; };
-		B3AD175C1AAD811800BF9EDC /* BookMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AD175B1AAD811800BF9EDC /* BookMasterViewController.m */; };
 		B3AD175F1AAD81BC00BF9EDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3AD175D1AAD81BC00BF9EDC /* Main.storyboard */; };
+		B3AD1D701AE61F4E00FF0ABB /* BookContentDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AD1D671AE61F4E00FF0ABB /* BookContentDataSource.m */; };
+		B3AD1D711AE61F4E00FF0ABB /* BookContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AD1D691AE61F4E00FF0ABB /* BookContentView.m */; };
+		B3AD1D721AE61F4E00FF0ABB /* BookMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AD1D6B1AE61F4E00FF0ABB /* BookMasterViewController.m */; };
+		B3AD1D731AE61F4E00FF0ABB /* BookPageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AD1D6D1AE61F4E00FF0ABB /* BookPageContentViewController.m */; };
+		B3AD1D741AE61F4E00FF0ABB /* BookPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AD1D6F1AE61F4E00FF0ABB /* BookPageViewController.m */; };
 		C96D198F1AB1D3E70026A1F6 /* 千年诅咒.txt in Resources */ = {isa = PBXBuildFile; fileRef = C96D198E1AB1D3E70026A1F6 /* 千年诅咒.txt */; };
 		C998C1F61AE16EE900150D42 /* BookShelfCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C998C1F41AE16EE900150D42 /* BookShelfCollectionViewCell.m */; };
 		C998C1F71AE16EE900150D42 /* BookShelfCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C998C1F51AE16EE900150D42 /* BookShelfCollectionViewCell.xib */; };
-		C9B54EAC1AAC173A00FE0DF8 /* BookPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B54EA71AAC173A00FE0DF8 /* BookPageViewController.m */; };
-		C9B54EAD1AAC173A00FE0DF8 /* BookPageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B54EA91AAC173A00FE0DF8 /* BookPageContentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,8 +106,6 @@
 		B355C9551AAE881200A4E62B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		B355C9571AAE881200A4E62B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B3658A171AAFE364008E8F6D /* 雪山飞狐.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "雪山飞狐.txt"; sourceTree = "<group>"; };
-		B3658A191AAFEE71008E8F6D /* BookContentDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookContentDataSource.h; sourceTree = "<group>"; };
-		B3658A1A1AAFEE71008E8F6D /* BookContentDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookContentDataSource.m; sourceTree = "<group>"; };
 		B36D25DF1AA7F1ED00EB0424 /* JinyongAllInOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JinyongAllInOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36D25E31AA7F1ED00EB0424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B36D25E41AA7F1ED00EB0424 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -121,19 +119,21 @@
 		B36D25FB1AA7F1ED00EB0424 /* JinyongAllInOneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JinyongAllInOneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36D26001AA7F1EE00EB0424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B36D26011AA7F1EE00EB0424 /* JinyongAllInOneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JinyongAllInOneTests.m; sourceTree = "<group>"; };
-		B3AD17571AAD6A8A00BF9EDC /* BookContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookContentView.h; sourceTree = "<group>"; };
-		B3AD17581AAD6A8A00BF9EDC /* BookContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookContentView.m; sourceTree = "<group>"; };
-		B3AD175A1AAD811800BF9EDC /* BookMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookMasterViewController.h; sourceTree = "<group>"; };
-		B3AD175B1AAD811800BF9EDC /* BookMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookMasterViewController.m; sourceTree = "<group>"; };
 		B3AD175E1AAD81BC00BF9EDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B3AD1D661AE61F4E00FF0ABB /* BookContentDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookContentDataSource.h; sourceTree = "<group>"; };
+		B3AD1D671AE61F4E00FF0ABB /* BookContentDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookContentDataSource.m; sourceTree = "<group>"; };
+		B3AD1D681AE61F4E00FF0ABB /* BookContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookContentView.h; sourceTree = "<group>"; };
+		B3AD1D691AE61F4E00FF0ABB /* BookContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookContentView.m; sourceTree = "<group>"; };
+		B3AD1D6A1AE61F4E00FF0ABB /* BookMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookMasterViewController.h; sourceTree = "<group>"; };
+		B3AD1D6B1AE61F4E00FF0ABB /* BookMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookMasterViewController.m; sourceTree = "<group>"; };
+		B3AD1D6C1AE61F4E00FF0ABB /* BookPageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookPageContentViewController.h; sourceTree = "<group>"; };
+		B3AD1D6D1AE61F4E00FF0ABB /* BookPageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookPageContentViewController.m; sourceTree = "<group>"; };
+		B3AD1D6E1AE61F4E00FF0ABB /* BookPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookPageViewController.h; sourceTree = "<group>"; };
+		B3AD1D6F1AE61F4E00FF0ABB /* BookPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookPageViewController.m; sourceTree = "<group>"; };
 		C96D198E1AB1D3E70026A1F6 /* 千年诅咒.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "千年诅咒.txt"; sourceTree = "<group>"; };
 		C998C1F31AE16EE900150D42 /* BookShelfCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookShelfCollectionViewCell.h; sourceTree = "<group>"; };
 		C998C1F41AE16EE900150D42 /* BookShelfCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookShelfCollectionViewCell.m; sourceTree = "<group>"; };
 		C998C1F51AE16EE900150D42 /* BookShelfCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookShelfCollectionViewCell.xib; sourceTree = "<group>"; };
-		C9B54EA71AAC173A00FE0DF8 /* BookPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookPageViewController.m; sourceTree = "<group>"; };
-		C9B54EA81AAC173A00FE0DF8 /* BookPageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookPageContentViewController.h; sourceTree = "<group>"; };
-		C9B54EA91AAC173A00FE0DF8 /* BookPageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookPageContentViewController.m; sourceTree = "<group>"; };
-		C9B54EAA1AAC173A00FE0DF8 /* BookPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookPageViewController.h; sourceTree = "<group>"; };
 		D69C3B121D8B1599418FE81F /* Pods-JinyongAllInOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JinyongAllInOne.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JinyongAllInOne/Pods-JinyongAllInOne.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -258,16 +258,7 @@
 				B36D25ED1AA7F1ED00EB0424 /* ViewController.m */,
 				B3AD175D1AAD81BC00BF9EDC /* Main.storyboard */,
 				B354053A1AE0E62F001E55F4 /* BookShelf */,
-				B3AD175A1AAD811800BF9EDC /* BookMasterViewController.h */,
-				B3AD175B1AAD811800BF9EDC /* BookMasterViewController.m */,
-				C9B54EAA1AAC173A00FE0DF8 /* BookPageViewController.h */,
-				C9B54EA71AAC173A00FE0DF8 /* BookPageViewController.m */,
-				C9B54EA81AAC173A00FE0DF8 /* BookPageContentViewController.h */,
-				C9B54EA91AAC173A00FE0DF8 /* BookPageContentViewController.m */,
-				B3658A191AAFEE71008E8F6D /* BookContentDataSource.h */,
-				B3658A1A1AAFEE71008E8F6D /* BookContentDataSource.m */,
-				B3AD17571AAD6A8A00BF9EDC /* BookContentView.h */,
-				B3AD17581AAD6A8A00BF9EDC /* BookContentView.m */,
+				B3AD1D651AE61F4E00FF0ABB /* BookReader */,
 				B36D25E21AA7F1ED00EB0424 /* Supporting Files */,
 			);
 			path = JinyongAllInOne;
@@ -302,6 +293,23 @@
 				B36D26001AA7F1EE00EB0424 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3AD1D651AE61F4E00FF0ABB /* BookReader */ = {
+			isa = PBXGroup;
+			children = (
+				B3AD1D661AE61F4E00FF0ABB /* BookContentDataSource.h */,
+				B3AD1D671AE61F4E00FF0ABB /* BookContentDataSource.m */,
+				B3AD1D681AE61F4E00FF0ABB /* BookContentView.h */,
+				B3AD1D691AE61F4E00FF0ABB /* BookContentView.m */,
+				B3AD1D6A1AE61F4E00FF0ABB /* BookMasterViewController.h */,
+				B3AD1D6B1AE61F4E00FF0ABB /* BookMasterViewController.m */,
+				B3AD1D6C1AE61F4E00FF0ABB /* BookPageContentViewController.h */,
+				B3AD1D6D1AE61F4E00FF0ABB /* BookPageContentViewController.m */,
+				B3AD1D6E1AE61F4E00FF0ABB /* BookPageViewController.h */,
+				B3AD1D6F1AE61F4E00FF0ABB /* BookPageViewController.m */,
+			);
+			path = BookReader;
 			sourceTree = "<group>";
 		};
 		C91D245AEC972752D1465196 /* Pods */ = {
@@ -531,19 +539,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3AD1D731AE61F4E00FF0ABB /* BookPageContentViewController.m in Sources */,
 				B35405451AE0E62F001E55F4 /* BookShelfCollectionView.m in Sources */,
-				C9B54EAD1AAC173A00FE0DF8 /* BookPageContentViewController.m in Sources */,
+				B3AD1D711AE61F4E00FF0ABB /* BookContentView.m in Sources */,
 				B35405481AE0E62F001E55F4 /* BookShelfCollectionViewLayout.m in Sources */,
-				B3658A1B1AAFEE71008E8F6D /* BookContentDataSource.m in Sources */,
+				B3AD1D701AE61F4E00FF0ABB /* BookContentDataSource.m in Sources */,
+				B3AD1D721AE61F4E00FF0ABB /* BookMasterViewController.m in Sources */,
 				B36D25E81AA7F1ED00EB0424 /* AppDelegate.m in Sources */,
 				B354054C1AE0F8CD001E55F4 /* BookShelfDecorationView.m in Sources */,
+				B3AD1D741AE61F4E00FF0ABB /* BookPageViewController.m in Sources */,
 				B36D25E51AA7F1ED00EB0424 /* main.m in Sources */,
-				C9B54EAC1AAC173A00FE0DF8 /* BookPageViewController.m in Sources */,
 				B36D25EE1AA7F1ED00EB0424 /* ViewController.m in Sources */,
 				B35405471AE0E62F001E55F4 /* BookShelfViewController.m in Sources */,
 				C998C1F61AE16EE900150D42 /* BookShelfCollectionViewCell.m in Sources */,
-				B3AD17591AAD6A8A00BF9EDC /* BookContentView.m in Sources */,
-				B3AD175C1AAD811800BF9EDC /* BookMasterViewController.m in Sources */,
 				B36D25EB1AA7F1ED00EB0424 /* JinyongAllInOne.xcdatamodeld in Sources */,
 				B35405491AE0E62F001E55F4 /* BookShelfViewLayoutAttributes.m in Sources */,
 			);
