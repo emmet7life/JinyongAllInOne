@@ -60,13 +60,13 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
 	BookShelfCollectionViewCell *cell = (BookShelfCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
-	if (indexPath.row % 3 == 0) {
-		cell.backgroundColor = [UIColor redColor];
-	}else if (indexPath.row % 3 == 1) {
-		cell.backgroundColor = [UIColor greenColor];
-	}else if (indexPath.row % 3 == 2) {
-		cell.backgroundColor = [UIColor yellowColor];
-	}
+//	if (indexPath.row % 3 == 0) {
+//		cell.backgroundColor = [UIColor redColor];
+//	}else if (indexPath.row % 3 == 1) {
+//		cell.backgroundColor = [UIColor greenColor];
+//	}else if (indexPath.row % 3 == 2) {
+//		cell.backgroundColor = [UIColor yellowColor];
+//	}
 	return cell;
 }
 

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <KRLCollectionViewGridLayout/KRLCollectionViewGridLayout.h>
 
-@interface BookShelfCollectionViewLayout : UICollectionViewFlowLayout
+@interface BookShelfCollectionViewLayout : KRLCollectionViewGridLayout //UICollectionViewFlowLayout
 
 @end
