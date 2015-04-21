@@ -30,6 +30,7 @@ PODS:
     - CocoaLumberjack/Default
   - CocoaSecurity (1.2.4)
   - DZNEmptyDataSet (1.5.2)
+  - KRLCollectionViewGridLayout (0.2.0)
   - LWDataListRefreshViewController (0.0.3):
     - DZNEmptyDataSet (~> 1.5.2)
     - LWDataListRefreshViewController/Views (= 0.0.3)
@@ -53,6 +54,7 @@ PODS:
 DEPENDENCIES:
   - CocoaLumberjack
   - CocoaSecurity
+  - KRLCollectionViewGridLayout
   - LWDataListRefreshViewController
   - LWNetworking
   - Mantle
@@ -64,6 +66,7 @@ SPEC CHECKSUMS:
   CocoaLumberjack: a6f77d987d65dc7ba86b0f84db7d0b9084f77bcb
   CocoaSecurity: d288a6f87e0f363823d2cb83e753814a6944f71a
   DZNEmptyDataSet: 741da409081a4bf707c949c964623a6ad1799772
+  KRLCollectionViewGridLayout: c40f09d560c7febc6e85c9f35e49312006e5d445
   LWDataListRefreshViewController: 2936872e35c5a703347501487e1585b05611cc45
   LWNetworking: 194196678a347c7e271e4e5b1b4cf264fe711939
   Mantle: 17de73ef929db2234d76fde2aacfb89ab11c61e8

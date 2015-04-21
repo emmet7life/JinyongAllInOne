@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-JinyongAllInOne-KRLCollectionViewGridLayout.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-JinyongAllInOne-LWDataListRefreshViewController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,52 +62,57 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>06CADAE3E8F48847F484B237</key>
+		<key>1AD9095A4DAFF0FC3145E34D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2B7DD5A5A45F1FD4CB2A5662</key>
+		<key>1D6310CDD19C628740D34C03</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>41AEC4C47FE94B72790DED17</key>
+		<key>36754A370201E716B3A54E75</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>490D23A46AC250625D5543C6</key>
+		<key>5AE8AC2F22D130CBF3F4D2F2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5445517ABA1203221521A6CC</key>
+		<key>6F1A6038788AE172734435B1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>86A75685C69AD82A16B92126</key>
+		<key>6FA7B609059F1683E5237CBE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A6EE737F57ABE7B92D719B70</key>
+		<key>8298DDEA10FC6811A1393DD0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AE7322A1227FB8476A7025D2</key>
+		<key>AD54ED7F31680EA356DC4AA1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BF735C90D41092B2FDE9DBF9</key>
+		<key>B70240E8FD5FF1813E3423DD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EDB1A3C410ED5ADCEB89E880</key>
+		<key>CB9F18F1BFAA9CAC1A869D19</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F954D422CA7B2888653B77B3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

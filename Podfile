@@ -34,7 +34,7 @@ pod 'Mantle'
 
 ##--------------UI------------------
 ##书架排版布局
-#pod 'KRLCollectionViewGridLayout'
+pod 'KRLCollectionViewGridLayout'
 
 
 end

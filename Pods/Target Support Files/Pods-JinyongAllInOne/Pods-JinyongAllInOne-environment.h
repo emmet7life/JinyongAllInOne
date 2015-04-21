@@ -84,6 +84,12 @@
 #define COCOAPODS_VERSION_MINOR_DZNEmptyDataSet 5
 #define COCOAPODS_VERSION_PATCH_DZNEmptyDataSet 2
 
+// KRLCollectionViewGridLayout
+#define COCOAPODS_POD_AVAILABLE_KRLCollectionViewGridLayout
+#define COCOAPODS_VERSION_MAJOR_KRLCollectionViewGridLayout 0
+#define COCOAPODS_VERSION_MINOR_KRLCollectionViewGridLayout 2
+#define COCOAPODS_VERSION_PATCH_KRLCollectionViewGridLayout 0
+
 // LWDataListRefreshViewController
 #define COCOAPODS_POD_AVAILABLE_LWDataListRefreshViewController
 #define COCOAPODS_VERSION_MAJOR_LWDataListRefreshViewController 0
