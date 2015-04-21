@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E8E20AF8C44E8D80DEDFE183"
+               BlueprintIdentifier = "A6EE737F57ABE7B92D719B70"
                BuildableName = "libPods-JinyongAllInOne-LWNetworking.a"
                BlueprintName = "Pods-JinyongAllInOne-LWNetworking"
                ReferencedContainer = "container:Pods.xcodeproj">

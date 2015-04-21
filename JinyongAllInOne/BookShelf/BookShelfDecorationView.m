@@ -17,7 +17,7 @@
 //		[self setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"BookShelfCellLeft"]]];
 //		self.layer.shadowOpacity = 0.5;
 //		self.layer.shadowOffset = CGSizeMake(0,5);
-        self.bgView.frame = frame;
+//        self.bgView.frame = frame;
 //        self.
 	}
 	return self;
@@ -44,6 +44,7 @@
 
 - (void)applyLayoutAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes {
     [super applyLayoutAttributes:layoutAttributes];
+	self.bgView.frame = layoutAttributes.bounds;
 }
 
 @end

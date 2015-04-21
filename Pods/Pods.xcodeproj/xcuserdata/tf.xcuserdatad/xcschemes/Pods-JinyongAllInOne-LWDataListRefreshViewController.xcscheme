@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E7881D46835EE3DA47A5FAD3"
+               BlueprintIdentifier = "41AEC4C47FE94B72790DED17"
                BuildableName = "libPods-JinyongAllInOne-LWDataListRefreshViewController.a"
                BlueprintName = "Pods-JinyongAllInOne-LWDataListRefreshViewController"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -13,15 +13,15 @@
 
 - (void)awakeFromNib {
 	[super awakeFromNib];
-	self.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"BookShelfBg"]];
+//	self.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"BookShelfBg"]];
 	
-	BookShelfCollectionViewLayout *layout = (BookShelfCollectionViewLayout *)self.collectionViewLayout;
-	layout.numberOfItemsPerLine = 3;
-	layout.aspectRatio = 4.0 / 5.0;
-	layout.interitemSpacing = 0;
-	layout.lineSpacing = 0;
-    
-    [self.collectionViewLayout invalidateLayout];
+//	BookShelfCollectionViewLayout *layout = (BookShelfCollectionViewLayout *)self.collectionViewLayout;
+//	layout.numberOfItemsPerLine = 3;
+//	layout.aspectRatio = 4.0 / 5.0;
+//	layout.interitemSpacing = 0;
+//	layout.lineSpacing = 0;
+	
+//    [self.collectionViewLayout invalidateLayout];
 }
 
 /*

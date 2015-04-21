@@ -23,6 +23,14 @@
     // Do any additional setup after loading the view.
 	UINib *cellNib = [UINib nibWithNibName:@"BookShelfCollectionViewCell" bundle:nil];
 	[self.collectionView registerNib:cellNib forCellWithReuseIdentifier:@"Cell"];
+	
+	self.books = [[NSMutableArray alloc] initWithCapacity:20];
+	
+	for (int i = 0; i < 50; i++) {
+		NSNumber *number = @(i);
+		[self.books addObject:number];
+	}
+	[self.collectionView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,34 +49,24 @@
 */
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    [self.collectionView.collectionViewLayout invalidateLayout];
+	[self.collectionView layoutIfNeeded];
 }
 
 #pragma mark - UICollectionViewDataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-	return 50;
-//	return [self.books count];
+	return [self.books count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
 	BookShelfCollectionViewCell *cell = (BookShelfCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
-//	NSString *imgName = @"";
-//	switch (indexPath.item % 3) {
-//		case 0:
-//			imgName = @"BookShelfCellLeft";
-//			break;
-//		case 1:
-//			imgName = @"BookShelfCellMiddle";
-//			break;
-//		case 2:
-//			imgName = @"BookShelfCellRight";
-//			break;
-//		default:
-//			break;
-//	}
-//	cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:imgName]];
-//    [cell layoutIfNeeded];
+	if (indexPath.row % 3 == 0) {
+		cell.backgroundColor = [UIColor redColor];
+	}else if (indexPath.row % 3 == 1) {
+		cell.backgroundColor = [UIColor greenColor];
+	}else if (indexPath.row % 3 == 2) {
+		cell.backgroundColor = [UIColor yellowColor];
+	}
 	return cell;
 }
 

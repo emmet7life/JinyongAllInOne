@@ -6,9 +6,8 @@
 //  Copyright (c) 2015年 李巍. All rights reserved.
 //
 
-#import "KRLCollectionViewGridLayout.h"
-//UICollectionViewFlowLayout
+#import <UIKit/UIKit.h>
 
-@interface BookShelfCollectionViewLayout : KRLCollectionViewGridLayout
+@interface BookShelfCollectionViewLayout : UICollectionViewFlowLayout
 
 @end

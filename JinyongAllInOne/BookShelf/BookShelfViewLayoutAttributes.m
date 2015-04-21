@@ -10,4 +10,14 @@
 
 @implementation BookShelfViewLayoutAttributes
 
+
+- (id)copyWithZone:(NSZone *)zone {
+	BookShelfViewLayoutAttributes *newAttributes = [super copyWithZone:zone];
+	return newAttributes;
+}
+
++ (instancetype)layoutAttributesForDecorationViewOfKind:(NSString *)decorationViewKind withIndexPath:(NSIndexPath *)indexPath {
+	return [super layoutAttributesForDecorationViewOfKind:decorationViewKind withIndexPath:indexPath];
+}
+
 @end

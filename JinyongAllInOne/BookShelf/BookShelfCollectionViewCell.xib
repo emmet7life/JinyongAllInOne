@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -14,7 +14,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lRf-ET-bCB">
-                        <rect key="frame" x="58" y="10" width="285" height="380"/>
+                        <rect key="frame" x="62" y="10" width="277" height="370"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="lRf-ET-bCB" secondAttribute="height" multiplier="3:4" id="IFl-q2-jRq"/>
@@ -31,11 +31,15 @@
             </view>
             <constraints>
                 <constraint firstItem="lRf-ET-bCB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="5fu-Rf-5fo"/>
-                <constraint firstAttribute="bottom" secondItem="lRf-ET-bCB" secondAttribute="bottom" constant="10" id="GNU-D7-dyh"/>
+                <constraint firstAttribute="bottom" secondItem="lRf-ET-bCB" secondAttribute="bottom" constant="20" id="GNU-D7-dyh"/>
                 <constraint firstAttribute="centerY" secondItem="C5V-ZD-KWf" secondAttribute="centerY" id="O6B-zw-PVr"/>
                 <constraint firstAttribute="centerX" secondItem="lRf-ET-bCB" secondAttribute="centerX" id="TiI-8g-np2"/>
                 <constraint firstAttribute="centerX" secondItem="C5V-ZD-KWf" secondAttribute="centerX" id="q2P-HA-15g"/>
             </constraints>
+            <connections>
+                <outlet property="bookNameLabel" destination="C5V-ZD-KWf" id="3OH-M1-vDH"/>
+                <outlet property="coverImageView" destination="lRf-ET-bCB" id="kId-76-3il"/>
+            </connections>
         </collectionViewCell>
     </objects>
 </document>

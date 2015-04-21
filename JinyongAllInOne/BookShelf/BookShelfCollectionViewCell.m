@@ -12,6 +12,11 @@
 
 - (void)awakeFromNib {
     // Initialization code
+	
+}
+
+- (void)layoutSubviews {
+	[super layoutSubviews];
 }
 
 @end

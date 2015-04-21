@@ -10,4 +10,8 @@
 
 @interface BookShelfCollectionViewCell : UICollectionViewCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *coverImageView;
+
+@property (weak, nonatomic) IBOutlet UILabel *bookNameLabel;
+
 @end
