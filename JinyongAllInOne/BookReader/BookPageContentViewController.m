@@ -39,14 +39,6 @@
 - (void)showPageContent {
 	// 设置内容
 	[self.contentView.textStorage setAttributedString:[[BookContentDataSource sharedInstance] contentAtPageIndex:self.pageIndex withContainerSize:self.contentView.textContainer.size]];
-	
-//	self.contentView.text = @"http://www.baidu.com/";
-//	NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString:@"Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."];
-//	[text addAttribute:NSLinkAttributeName value:@"myurl://tapped" range:NSMakeRange(6, 16)];
-	
-//	[self.contentView.textStorage addAttribute:NSLinkAttributeName value:@"jinyongaio://show.remark" range:NSMakeRange(0, 20)];
-	
-//	self.contentView.attributedText = text;
 }
 
 - (void)tapContent:(UITapGestureRecognizer *)tap {

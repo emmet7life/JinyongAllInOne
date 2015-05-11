@@ -68,11 +68,18 @@
 }
 
 - (NSTextContainer *)calculatePageContainerAtIndex:(NSInteger)index withContainerSize:(CGSize)size {
-	if (index >= [self.pageContainers count]) {
-		NSTextContainer *container = [[NSTextContainer alloc] initWithSize:size];
-		[self.contentLayoutManager addTextContainer:container];
-		[self.pageContainers addObject:container];
+	for (int i = 0; i <= index; i++) {
+		if (i >= [self.pageContainers count]) {
+			NSTextContainer *container = [[NSTextContainer alloc] initWithSize:size];
+			[self.contentLayoutManager addTextContainer:container];
+			[self.pageContainers addObject:container];
+		}
 	}
+//	if (index >= [self.pageContainers count]) {
+//		NSTextContainer *container = [[NSTextContainer alloc] initWithSize:size];
+//		[self.contentLayoutManager addTextContainer:container];
+//		[self.pageContainers addObject:container];
+//	}
 	return self.contentLayoutManager.textContainers[index];
 }
 

@@ -25,6 +25,7 @@
     // Do any additional setup after loading the view.
 	
 	self.pageViewController = [self.childViewControllers firstObject];
+	[self.pageViewController setupWithFirstPage:0];
 	self.navigationController.navigationBarHidden = YES;
 }
 

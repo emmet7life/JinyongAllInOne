@@ -17,10 +17,11 @@
 	self = [super initWithFrame:frame];
 	if (self) {
 		self.backgroundColor = [UIColor colorWithWhite:0.8 alpha:0.8];
+		self.exclusiveTouch = YES;
 		back = [UIButton buttonWithType:UIButtonTypeCustom];
 		[back setImage:[UIImage imageNamed:@"back_button_down"] forState:UIControlStateNormal];
 		[back setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-		[back setFrame:CGRectMake(15, 31, 22, 22)];
+		[back setFrame:CGRectMake(10, 20, 44, 44)];
 		[back addTarget:self action:@selector(goBackAction) forControlEvents:UIControlEventTouchUpInside];
 		[self addSubview:back];
 		

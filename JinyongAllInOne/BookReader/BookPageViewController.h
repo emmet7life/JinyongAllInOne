@@ -10,9 +10,6 @@
 
 @interface BookPageViewController : UIPageViewController <UIPageViewControllerDataSource, UIPageViewControllerDelegate>
 
-@property (assign, nonatomic) NSInteger maxPageCount;
-
-@property (assign, nonatomic) NSInteger currentPageIndex;
-@property (assign, nonatomic) NSInteger templePageIndex;
+- (void)setupWithFirstPage:(NSInteger)pageIndex;
 
 @end

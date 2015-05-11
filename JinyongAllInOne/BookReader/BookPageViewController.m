@@ -9,8 +9,16 @@
 #import "BookPageViewController.h"
 #import "BookPageContentViewController.h"
 #import "BookContentDataSource.h"
+#import <SVProgressHUD/SVProgressHUD.h>
+
+#import "EBook.h"
 
 @interface BookPageViewController ()
+
+@property (assign, nonatomic) NSInteger maxPageCount;
+
+@property (assign, nonatomic) NSInteger currentPageIndex;
+@property (assign, nonatomic) NSInteger templePageIndex;
 
 @end
 
@@ -20,15 +28,21 @@
     [super awakeFromNib];
 	self.delegate = self;
 	self.dataSource = self;
-	//从第一页开始计算页码，但是封面是第0页
-	self.currentPageIndex = 0;
-	self.templePageIndex = 0;
+//	//从第一页开始计算页码，但是封面是第0页
+//	self.currentPageIndex = 0;
+//	self.templePageIndex = self.currentPageIndex;
 	self.maxPageCount = [[BookContentDataSource sharedInstance] maxPageCount];
 	
-    // 设置书籍的第一页
-    [self setViewControllers:@[[self bookContentControllerAtIndex:0]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:^(BOOL finished) {
+//	EBook *book = [[EBook]];
+}
+
+- (void)setupWithFirstPage:(NSInteger)pageIndex {
+	self.currentPageIndex = pageIndex;
+	self.templePageIndex = pageIndex;
+	// 设置书籍的第一页
+	[self setViewControllers:@[[self bookContentControllerAtIndex:pageIndex]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:^(BOOL finished) {
 		
-    }];
+	}];
 }
 
 #pragma mark -
@@ -47,11 +61,10 @@
 	
 	NSUInteger index = [self presentationIndexForPageViewController:pageViewController];
 	if ((index == 0) || (index == NSNotFound)) {
-		NSLog(@"已经是第一页");
+		[SVProgressHUD showInfoWithStatus:@"已经是第一页"];
 		return nil;
 	}
 	index--;
-	NSLog(@"返回前一页");
 	return [self bookContentControllerAtIndex:index];
 }
 
@@ -59,11 +72,10 @@
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController {
 	NSUInteger index = [self presentationIndexForPageViewController:pageViewController];
 	if (index == [self presentationCountForPageViewController:pageViewController]) {
-		NSLog(@"已经是最后一页");
+		[SVProgressHUD showInfoWithStatus:@"已经是最后一页"];
 		return nil;
 	}
 	index++;
-	NSLog(@"翻到下一页");
 	return [self bookContentControllerAtIndex:index];
 }
 
@@ -89,6 +101,9 @@
 	if (completed) {
 		//翻页完成
 		self.currentPageIndex = self.templePageIndex;
+		NSLog(@"%zd / %zd", self.currentPageIndex, self.maxPageCount);
+		
+		
 		
 	}else{ //翻页未完成 又回来了。
 		if (NO) {
