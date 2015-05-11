@@ -10,6 +10,6 @@
 
 @interface BookShelfViewController : UIViewController
 
-@property (strong, nonatomic) NSMutableArray *books;
+@property (strong, nonatomic) NSArray *books;
 
 @end

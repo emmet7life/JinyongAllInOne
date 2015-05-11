@@ -35,13 +35,25 @@
 - (instancetype)init {
 	self = [super init];
 	if (self) {
-		self.pageContainers = [[NSMutableArray alloc] initWithCapacity:20];
-		self.textStorage = [[NSTextStorage alloc] initWithString:[self loadDataWithBookName:@"千年诅咒"]];
-		[self.textStorage addAttributes:[self contentAttributes] range:NSMakeRange(0, [self.textStorage.string length])];
-		self.contentLayoutManager = [[NSLayoutManager alloc] init];
-		[self.textStorage addLayoutManager:self.contentLayoutManager];
+		
 	}
 	return self;
+}
+
+- (void)setupWithBookName:(NSString *)bookName {
+	if (!self.pageContainers) {
+		self.pageContainers = [[NSMutableArray alloc] initWithCapacity:20];
+	}
+	self.textStorage = [[NSTextStorage alloc] initWithString:[self loadDataWithBookName:bookName]];
+	[self.textStorage addAttributes:[self contentAttributes] range:NSMakeRange(0, [self.textStorage.string length])];
+	self.contentLayoutManager = [[NSLayoutManager alloc] init];
+	[self.textStorage addLayoutManager:self.contentLayoutManager];
+}
+
+- (void)restore {
+	[self.pageContainers removeAllObjects];
+	self.textStorage = nil;
+	self.contentLayoutManager = nil;
 }
 
 - (NSString *)loadDataWithBookName:(NSString *)bName {
@@ -50,6 +62,7 @@
 	NSString *string = [[NSString alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:bName ofType:@"txt"] encoding:enc error:&error];
 	if (error) {
 		NSLog(@"page data error = %@", [error localizedDescription]);
+		string = [[NSString alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:bName ofType:@"txt"] encoding:NSUTF8StringEncoding error:nil];
 	}
 	return string;
 }
@@ -75,7 +88,6 @@
 	CGRect frame = [self.contentLayoutManager boundingRectForGlyphRange:NSMakeRange(0, [self.contentLayoutManager numberOfGlyphs]) inTextContainer:container];
 	[self.contentLayoutManager removeTextContainerAtIndex:[self.contentLayoutManager.textContainers count] - 1];
 	NSUInteger maxPageCount = frame.size.height / [[UIScreen mainScreen] applicationFrame].size.height + 1;
-	NSLog(@"max page count = %zd", maxPageCount);
 	return maxPageCount;
 }
 

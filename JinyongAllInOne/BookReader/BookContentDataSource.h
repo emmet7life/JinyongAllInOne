@@ -10,8 +10,12 @@
 
 @interface BookContentDataSource : NSObject
 
-
 + (instancetype)sharedInstance;
+
+- (void)setupWithBookName:(NSString *)bookName;
+
+- (void)restore;
+
 
 - (NSAttributedString *)contentAtPageIndex:(NSInteger)index withContainerSize:(CGSize)size;
 

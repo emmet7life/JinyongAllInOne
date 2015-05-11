@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BookContentView.h"
 
 @interface BookPageContentViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet UITextView *contentView;
+@property (strong, nonatomic) IBOutlet BookContentView *contentView;
 
 @property (assign, nonatomic) NSInteger pageIndex;
 

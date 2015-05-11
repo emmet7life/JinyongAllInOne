@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NQv-dD-dgH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NQv-dD-dgH">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
         <!--Book Page View Controller-->
@@ -24,8 +24,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <searchBar contentMode="redraw" searchBarStyle="prominent" placeholder="搜索" translatesAutoresizingMaskIntoConstraints="NO" id="2sp-7n-mgQ">
+                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="98t-yS-czV"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                <connections>
+                                    <outlet property="delegate" destination="iI3-J8-Npj" id="ZxS-hW-pMb"/>
+                                </connections>
+                            </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aHU-Qs-5Ca" customClass="BookShelfCollectionView">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="108" width="600" height="492"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewLayout key="collectionViewLayout" id="5m5-8i-Dvo" customClass="BookShelfCollectionViewLayout"/>
                                 <cells>
@@ -47,15 +57,23 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="aHU-Qs-5Ca" firstAttribute="top" secondItem="Eld-Eg-Cwf" secondAttribute="top" id="1CS-F4-pbJ"/>
+                            <constraint firstItem="aHU-Qs-5Ca" firstAttribute="top" secondItem="Eld-Eg-Cwf" secondAttribute="top" constant="108" id="1CS-F4-pbJ"/>
+                            <constraint firstItem="2sp-7n-mgQ" firstAttribute="top" secondItem="Eld-Eg-Cwf" secondAttribute="top" id="BFd-Ew-qfE"/>
                             <constraint firstItem="aHU-Qs-5Ca" firstAttribute="leading" secondItem="Eld-Eg-Cwf" secondAttribute="leading" id="ENz-53-bES"/>
+                            <constraint firstAttribute="trailing" secondItem="2sp-7n-mgQ" secondAttribute="trailing" id="EZH-OE-hh3"/>
+                            <constraint firstItem="2sp-7n-mgQ" firstAttribute="top" secondItem="cgX-XN-Lyt" secondAttribute="bottom" id="FYK-C5-kOM"/>
+                            <constraint firstItem="cgX-XN-Lyt" firstAttribute="top" secondItem="2sp-7n-mgQ" secondAttribute="bottom" constant="20" id="J1h-u7-eCW"/>
                             <constraint firstItem="aHU-Qs-5Ca" firstAttribute="top" secondItem="cgX-XN-Lyt" secondAttribute="bottom" id="JK6-5m-YBu"/>
+                            <constraint firstItem="2sp-7n-mgQ" firstAttribute="leading" secondItem="Eld-Eg-Cwf" secondAttribute="leading" id="TD8-qJ-vd8"/>
                             <constraint firstItem="ATx-yO-uwO" firstAttribute="top" secondItem="aHU-Qs-5Ca" secondAttribute="bottom" id="dfZ-s6-no5"/>
                             <constraint firstItem="aHU-Qs-5Ca" firstAttribute="top" secondItem="cgX-XN-Lyt" secondAttribute="bottom" id="u8g-LN-KSp"/>
                             <constraint firstAttribute="trailing" secondItem="aHU-Qs-5Ca" secondAttribute="trailing" id="xo9-FR-OIu"/>
+                            <constraint firstItem="aHU-Qs-5Ca" firstAttribute="top" secondItem="2sp-7n-mgQ" secondAttribute="bottom" id="yNg-RD-iCc"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="BFd-Ew-qfE"/>
+                                <exclude reference="J1h-u7-eCW"/>
                                 <exclude reference="JK6-5m-YBu"/>
                                 <exclude reference="u8g-LN-KSp"/>
                             </mask>
@@ -64,6 +82,7 @@
                     <navigationItem key="navigationItem" title="我的书架" id="cKm-10-txf"/>
                     <connections>
                         <outlet property="collectionView" destination="aHU-Qs-5Ca" id="zUg-KB-hZs"/>
+                        <outlet property="searchBar" destination="2sp-7n-mgQ" id="kke-QF-XO0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U6O-3q-Ss2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -136,9 +155,15 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="ApM-9b-gGB" secondAttribute="trailing" id="2jD-vd-lGf"/>
                             <constraint firstItem="ApM-9b-gGB" firstAttribute="top" secondItem="e7O-Tb-6wb" secondAttribute="top" id="BDG-Si-cRq"/>
+                            <constraint firstItem="ApM-9b-gGB" firstAttribute="top" secondItem="7Vm-Bk-Ppf" secondAttribute="bottom" constant="-20" id="FOo-oD-d5Y"/>
                             <constraint firstItem="ApM-9b-gGB" firstAttribute="leading" secondItem="e7O-Tb-6wb" secondAttribute="leading" id="OCu-l2-x4A"/>
                             <constraint firstItem="Hmr-Ct-YyP" firstAttribute="top" secondItem="ApM-9b-gGB" secondAttribute="bottom" id="fH9-vq-MQe"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="BDG-Si-cRq"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="contentView" destination="ApM-9b-gGB" id="t05-Lt-VyQ"/>

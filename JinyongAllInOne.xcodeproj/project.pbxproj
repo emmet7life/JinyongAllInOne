@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		412909B111C5B20AFB2258E6 /* libPods-JinyongAllInOne.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F8E7E5C2E7FE9BBE1D05CF /* libPods-JinyongAllInOne.a */; };
+		B313C1D11B00783000F8484A /* BookNavBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = B313C1D01B00783000F8484A /* BookNavBarView.m */; };
+		B313C2111B00871900F8484A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B313C2101B00871900F8484A /* libxml2.dylib */; };
+		B313C2151B00890800F8484A /* 爱在仙境的日子.txt in Resources */ = {isa = PBXBuildFile; fileRef = B313C2121B00890800F8484A /* 爱在仙境的日子.txt */; };
+		B313C2161B00890800F8484A /* 十年.txt in Resources */ = {isa = PBXBuildFile; fileRef = B313C2131B00890800F8484A /* 十年.txt */; };
+		B313C2171B00890800F8484A /* 最熟悉的陌生人.txt in Resources */ = {isa = PBXBuildFile; fileRef = B313C2141B00890800F8484A /* 最熟悉的陌生人.txt */; };
+		B313C2191B0089B300F8484A /* Books.plist in Resources */ = {isa = PBXBuildFile; fileRef = B313C2181B0089B300F8484A /* Books.plist */; };
 		B35405451AE0E62F001E55F4 /* BookShelfCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B354053C1AE0E62F001E55F4 /* BookShelfCollectionView.m */; };
 		B35405471AE0E62F001E55F4 /* BookShelfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B35405401AE0E62F001E55F4 /* BookShelfViewController.m */; };
 		B35405481AE0E62F001E55F4 /* BookShelfCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B35405421AE0E62F001E55F4 /* BookShelfCollectionViewLayout.m */; };
@@ -25,7 +31,6 @@
 		B36D25E51AA7F1ED00EB0424 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B36D25E41AA7F1ED00EB0424 /* main.m */; };
 		B36D25E81AA7F1ED00EB0424 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B36D25E71AA7F1ED00EB0424 /* AppDelegate.m */; };
 		B36D25EB1AA7F1ED00EB0424 /* JinyongAllInOne.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B36D25E91AA7F1ED00EB0424 /* JinyongAllInOne.xcdatamodeld */; };
-		B36D25EE1AA7F1ED00EB0424 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36D25ED1AA7F1ED00EB0424 /* ViewController.m */; };
 		B36D25F31AA7F1ED00EB0424 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B36D25F21AA7F1ED00EB0424 /* Images.xcassets */; };
 		B36D25F61AA7F1ED00EB0424 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B36D25F41AA7F1ED00EB0424 /* LaunchScreen.xib */; };
 		B36D26021AA7F1EE00EB0424 /* JinyongAllInOneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B36D26011AA7F1EE00EB0424 /* JinyongAllInOneTests.m */; };
@@ -81,6 +86,14 @@
 /* Begin PBXFileReference section */
 		42F8E7E5C2E7FE9BBE1D05CF /* libPods-JinyongAllInOne.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JinyongAllInOne.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79C14252712467C92B1B033A /* Pods-JinyongAllInOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JinyongAllInOne.release.xcconfig"; path = "Pods/Target Support Files/Pods-JinyongAllInOne/Pods-JinyongAllInOne.release.xcconfig"; sourceTree = "<group>"; };
+		B313C1CF1B00783000F8484A /* BookNavBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookNavBarView.h; sourceTree = "<group>"; };
+		B313C1D01B00783000F8484A /* BookNavBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookNavBarView.m; sourceTree = "<group>"; };
+		B313C1D21B007A5100F8484A /* MacroDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDefinition.h; sourceTree = "<group>"; };
+		B313C2101B00871900F8484A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		B313C2121B00890800F8484A /* 爱在仙境的日子.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "爱在仙境的日子.txt"; sourceTree = "<group>"; };
+		B313C2131B00890800F8484A /* 十年.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "十年.txt"; sourceTree = "<group>"; };
+		B313C2141B00890800F8484A /* 最熟悉的陌生人.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "最熟悉的陌生人.txt"; sourceTree = "<group>"; };
+		B313C2181B0089B300F8484A /* Books.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Books.plist; sourceTree = "<group>"; };
 		B354053B1AE0E62F001E55F4 /* BookShelfCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookShelfCollectionView.h; sourceTree = "<group>"; };
 		B354053C1AE0E62F001E55F4 /* BookShelfCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookShelfCollectionView.m; sourceTree = "<group>"; };
 		B354053F1AE0E62F001E55F4 /* BookShelfViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookShelfViewController.h; sourceTree = "<group>"; };
@@ -112,8 +125,6 @@
 		B36D25E61AA7F1ED00EB0424 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B36D25E71AA7F1ED00EB0424 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B36D25EA1AA7F1ED00EB0424 /* JinyongAllInOne.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JinyongAllInOne.xcdatamodel; sourceTree = "<group>"; };
-		B36D25EC1AA7F1ED00EB0424 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B36D25ED1AA7F1ED00EB0424 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B36D25F21AA7F1ED00EB0424 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B36D25F51AA7F1ED00EB0424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B36D25FB1AA7F1ED00EB0424 /* JinyongAllInOneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JinyongAllInOneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,6 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B313C2111B00871900F8484A /* libxml2.dylib in Frameworks */,
 				412909B111C5B20AFB2258E6 /* libPods-JinyongAllInOne.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,8 +266,6 @@
 			children = (
 				B36D25E61AA7F1ED00EB0424 /* AppDelegate.h */,
 				B36D25E71AA7F1ED00EB0424 /* AppDelegate.m */,
-				B36D25EC1AA7F1ED00EB0424 /* ViewController.h */,
-				B36D25ED1AA7F1ED00EB0424 /* ViewController.m */,
 				B3AD175D1AAD81BC00BF9EDC /* Main.storyboard */,
 				B354053A1AE0E62F001E55F4 /* BookShelf */,
 				B3AD1D651AE61F4E00FF0ABB /* BookReader */,
@@ -272,8 +282,13 @@
 				B36D25E91AA7F1ED00EB0424 /* JinyongAllInOne.xcdatamodeld */,
 				B36D25E31AA7F1ED00EB0424 /* Info.plist */,
 				B36D25E41AA7F1ED00EB0424 /* main.m */,
+				B313C1D21B007A5100F8484A /* MacroDefinition.h */,
+				B313C2181B0089B300F8484A /* Books.plist */,
 				B3658A171AAFE364008E8F6D /* 雪山飞狐.txt */,
 				C96D198E1AB1D3E70026A1F6 /* 千年诅咒.txt */,
+				B313C2121B00890800F8484A /* 爱在仙境的日子.txt */,
+				B313C2131B00890800F8484A /* 十年.txt */,
+				B313C2141B00890800F8484A /* 最熟悉的陌生人.txt */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -304,6 +319,8 @@
 				B3AD1D691AE61F4E00FF0ABB /* BookContentView.m */,
 				B3AD1D6C1AE61F4E00FF0ABB /* BookPageContentViewController.h */,
 				B3AD1D6D1AE61F4E00FF0ABB /* BookPageContentViewController.m */,
+				B313C1CF1B00783000F8484A /* BookNavBarView.h */,
+				B313C1D01B00783000F8484A /* BookNavBarView.m */,
 				B3AD1D6E1AE61F4E00FF0ABB /* BookPageViewController.h */,
 				B3AD1D6F1AE61F4E00FF0ABB /* BookPageViewController.m */,
 				B3AD1D661AE61F4E00FF0ABB /* BookContentDataSource.h */,
@@ -324,6 +341,7 @@
 		F4C03603E1636CC502D32CA4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B313C2101B00871900F8484A /* libxml2.dylib */,
 				42F8E7E5C2E7FE9BBE1D05CF /* libPods-JinyongAllInOne.a */,
 			);
 			name = Frameworks;
@@ -474,11 +492,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3AD175F1AAD81BC00BF9EDC /* Main.storyboard in Resources */,
+				B313C2161B00890800F8484A /* 十年.txt in Resources */,
 				B36D25F61AA7F1ED00EB0424 /* LaunchScreen.xib in Resources */,
 				C998C1F71AE16EE900150D42 /* BookShelfCollectionViewCell.xib in Resources */,
+				B313C2151B00890800F8484A /* 爱在仙境的日子.txt in Resources */,
+				B313C2171B00890800F8484A /* 最熟悉的陌生人.txt in Resources */,
 				B36D25F31AA7F1ED00EB0424 /* Images.xcassets in Resources */,
 				B3658A181AAFE364008E8F6D /* 雪山飞狐.txt in Resources */,
 				C96D198F1AB1D3E70026A1F6 /* 千年诅咒.txt in Resources */,
+				B313C2191B0089B300F8484A /* Books.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,10 +571,10 @@
 				B354054C1AE0F8CD001E55F4 /* BookShelfDecorationView.m in Sources */,
 				B3AD1D741AE61F4E00FF0ABB /* BookPageViewController.m in Sources */,
 				B36D25E51AA7F1ED00EB0424 /* main.m in Sources */,
-				B36D25EE1AA7F1ED00EB0424 /* ViewController.m in Sources */,
 				B35405471AE0E62F001E55F4 /* BookShelfViewController.m in Sources */,
 				C998C1F61AE16EE900150D42 /* BookShelfCollectionViewCell.m in Sources */,
 				B36D25EB1AA7F1ED00EB0424 /* JinyongAllInOne.xcdatamodeld in Sources */,
+				B313C1D11B00783000F8484A /* BookNavBarView.m in Sources */,
 				B35405491AE0E62F001E55F4 /* BookShelfViewLayoutAttributes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

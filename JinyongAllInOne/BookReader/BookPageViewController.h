@@ -13,5 +13,6 @@
 @property (assign, nonatomic) NSInteger maxPageCount;
 
 @property (assign, nonatomic) NSInteger currentPageIndex;
+@property (assign, nonatomic) NSInteger templePageIndex;
 
 @end

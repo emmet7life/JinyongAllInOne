@@ -18,41 +18,23 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-	
 	self.delegate = self;
 	self.dataSource = self;
 	//从第一页开始计算页码，但是封面是第0页
 	self.currentPageIndex = 0;
+	self.templePageIndex = 0;
 	self.maxPageCount = [[BookContentDataSource sharedInstance] maxPageCount];
 	
     // 设置书籍的第一页
-    [self setViewControllers:@[[self.storyboard instantiateViewControllerWithIdentifier:@"BookPageContentViewController"]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:^(BOOL finished) {
+    [self setViewControllers:@[[self bookContentControllerAtIndex:0]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:^(BOOL finished) {
 		
     }];
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+#pragma mark -
 
 - (BookPageContentViewController *)bookContentControllerAtIndex:(NSUInteger)index {
-	self.currentPageIndex = index;
+	self.templePageIndex = index;
 	BookPageContentViewController *pageContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BookPageContentViewController"];
 	pageContentViewController.pageIndex = index;
 	return pageContentViewController;
@@ -69,6 +51,7 @@
 		return nil;
 	}
 	index--;
+	NSLog(@"返回前一页");
 	return [self bookContentControllerAtIndex:index];
 }
 
@@ -80,6 +63,7 @@
 		return nil;
 	}
 	index++;
+	NSLog(@"翻到下一页");
 	return [self bookContentControllerAtIndex:index];
 }
 
@@ -98,27 +82,20 @@
 
 - (void)pageViewController:(UIPageViewController *)pageViewController willTransitionToViewControllers:(NSArray *)pendingViewControllers {
 //	_pageIsAnimating = NO;
-	
 }
 
 - (void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray *)previousViewControllers transitionCompleted:(BOOL)completed {
 	
 	if (completed) {
 		//翻页完成
-		
+		self.currentPageIndex = self.templePageIndex;
 		
 	}else{ //翻页未完成 又回来了。
-		//		if (_isTurnOver && !_isRight) {//往右翻 且正好跨章节
-		//
-		//			E_EveryChapter *chapter = [[E_ReaderDataSource shareInstance] nextChapter];
-		//			[self parseChapter:chapter];
-		//
-		//		}else if(_isTurnOver && _isRight){//往左翻 且正好跨章节
-		//
-		//			E_EveryChapter *chapter = [[E_ReaderDataSource shareInstance] preChapter];
-		//			[self parseChapter:chapter];
-		//			
-		//		}
+		if (NO) {
+			//往右翻 且正好跨章节
+		}else if (NO) {
+			//往左翻 且正好跨章节
+		}
 	}
 }
 

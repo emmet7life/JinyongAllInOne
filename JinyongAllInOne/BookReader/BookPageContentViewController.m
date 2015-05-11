@@ -7,10 +7,14 @@
 //
 
 #import "BookPageContentViewController.h"
-
+#import "BookNavBarView.h"
 #import "BookContentDataSource.h"
 
-@interface BookPageContentViewController ()
+#import "MacroDefinition.h"
+
+@interface BookPageContentViewController () <BookNavBarViewProtocol>
+
+@property (strong, nonatomic) BookNavBarView *navView;
 
 @end
 
@@ -19,9 +23,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-	
-//	UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapContent:)];
-//	[self.view addGestureRecognizer:tapGesture];
+	BookNavBarView *nav = [[BookNavBarView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 0)];
+	nav.delegate = self;
+	[self.view addSubview:nav];
+	self.navView = nav;
+	UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapContent:)];
+	[self.view addGestureRecognizer:tapGesture];
 }
 
 - (void)viewDidLayoutSubviews {
@@ -43,7 +50,20 @@
 }
 
 - (void)tapContent:(UITapGestureRecognizer *)tap {
-	[[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
+	[UIView animateWithDuration:0.4 animations:^{
+		CGRect frame = self.navView.frame;
+		if (frame.size.height == 0) {
+			frame.size.height = 64;
+		}else {
+			frame.size.height = 0;
+		}
+		self.navView.frame = frame;
+	} completion:NULL];
+}
+
+- (void)backAction {
+	[[BookContentDataSource sharedInstance] restore];
+	[self dismissViewControllerAnimated:YES completion:NULL];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -16,23 +16,21 @@
 
 - (void)awakeFromNib {
 	[super awakeFromNib];
-	UIMenuItem *menuItem = [[UIMenuItem alloc] initWithTitle:@"添加备注" action:@selector(changeColor:)];
-	[[UIMenuController sharedMenuController] setMenuItems:[NSArray arrayWithObject:menuItem]];
+//	UIMenuItem *menuItem = [[UIMenuItem alloc] initWithTitle:@"添加备注" action:@selector(changeColor:)];
+//	[[UIMenuController sharedMenuController] setMenuItems:[NSArray arrayWithObject:menuItem]];
 	// 边距
 	self.textContainerInset = UIEdgeInsetsMake(40, 20, 20, 20);
 	
-	self.delegate = self;
-	
-	self.dataDetectorTypes = UIDataDetectorTypeAll;
-	
-	self.allowsEditingTextAttributes = YES;
-	
-	NSDictionary *attributes = @{NSUnderlineStyleAttributeName:@(NSUnderlineStyleSingle)};
-	self.linkTextAttributes = attributes;
-	
-//	UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(textTapped:)];
-//	[self addGestureRecognizer:tapGesture];
+//	self.delegate = self;
 //	
+//	self.dataDetectorTypes = UIDataDetectorTypeAll;
+//	
+//	self.allowsEditingTextAttributes = YES;
+//	
+//	NSDictionary *attributes = @{NSUnderlineStyleAttributeName:@(NSUnderlineStyleSingle)};
+//	self.linkTextAttributes = attributes;
+//	
+
 //	
 //	NSAttributedString* attributedString = [[NSAttributedString alloc] initWithString:@"a clickable word" attributes:@{ @"myCustomTag" : @(YES) }];
 ////	[self.textStorage appendAttributedString:attributedString];

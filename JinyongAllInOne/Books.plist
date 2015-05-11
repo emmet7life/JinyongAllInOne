@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>img</key>
+		<string></string>
+		<key>title</key>
+		<string>千年诅咒</string>
+	</dict>
+	<dict>
+		<key>img</key>
+		<string></string>
+		<key>title</key>
+		<string>雪山飞狐</string>
+	</dict>
+	<dict>
+		<key>img</key>
+		<string>爱在仙境的日子</string>
+		<key>title</key>
+		<string>爱在仙境的日子</string>
+	</dict>
+	<dict>
+		<key>img</key>
+		<string>十年</string>
+		<key>title</key>
+		<string>十年</string>
+	</dict>
+	<dict>
+		<key>img</key>
+		<string>最熟悉的陌生人</string>
+		<key>title</key>
+		<string>最熟悉的陌生人</string>
+	</dict>
+</array>
+</plist>

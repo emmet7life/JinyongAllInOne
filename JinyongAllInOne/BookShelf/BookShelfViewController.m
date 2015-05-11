@@ -11,10 +11,14 @@
 #import "BookShelfCollectionViewCell.h"
 
 #import "BookMasterViewController.h"
+#import "BookContentDataSource.h"
 
 @interface BookShelfViewController ()
 
 @property (weak, nonatomic) IBOutlet BookShelfCollectionView *collectionView;
+
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
+@property (strong, nonatomic) NSArray *searchResults;
 
 @end
 
@@ -26,12 +30,10 @@
 	UINib *cellNib = [UINib nibWithNibName:@"BookShelfCollectionViewCell" bundle:nil];
 	[self.collectionView registerNib:cellNib forCellWithReuseIdentifier:@"Cell"];
 	
-	self.books = [[NSMutableArray alloc] initWithCapacity:20];
-	
-	for (int i = 0; i < 40; i++) {
-		NSNumber *number = @(i);
-		[self.books addObject:number];
-	}
+	NSArray *array = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Books" ofType:@"plist"]];
+	self.books = [array mutableCopy];
+	self.searchResults = [array mutableCopy];
+
 	[self.collectionView reloadData];
 }
 
@@ -53,52 +55,58 @@
 #pragma mark - UICollectionViewDataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-	return [self.books count];
+	return [self.searchResults count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
 	BookShelfCollectionViewCell *cell = (BookShelfCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
-//	if (indexPath.row % 3 == 0) {
-//		cell.backgroundColor = [UIColor redColor];
-//	}else if (indexPath.row % 3 == 1) {
-//		cell.backgroundColor = [UIColor greenColor];
-//	}else if (indexPath.row % 3 == 2) {
-//		cell.backgroundColor = [UIColor yellowColor];
-//	}
+	NSDictionary *book = self.searchResults[indexPath.item];
+	cell.coverImageView.image = [UIImage imageNamed:book[@"img"]];
+	if ([book[@"img"] length] == 0) {
+		cell.bookNameLabel.text = book[@"title"];
+	}else {
+		cell.bookNameLabel.text = @"";
+	}
 	return cell;
 }
-
-//- (id)dequeueReusableSupplementaryViewOfKind:(NSString *)elementKind withReuseIdentifier:(NSString *)identifier forIndexPath:(NSIndexPath *)indexPath {
-//	NSLog(@"elment kind = %@", elementKind);
-//	return nil;
-//}
-//- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
-//	NSLog(@"elment kind = %@", kind);
-//	return nil;
-//}
 
 #pragma mark - UICollectionViewDelegate
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    BookMasterViewController *master = [self.storyboard instantiateViewControllerWithIdentifier:@"BookMasterViewController"];
-    [self.navigationController pushViewController:master animated:YES];
+	[[BookContentDataSource sharedInstance] setupWithBookName:self.books[indexPath.item][@"title"]];
+	BookMasterViewController *master = [self.storyboard instantiateViewControllerWithIdentifier:@"BookMasterViewController"];
+	[self presentViewController:master animated:YES completion:NULL];
 }
 
-//- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
-//	TFExamPaperHeaderView *reusableView = (TFExamPaperHeaderView *)[collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"Header" forIndexPath:indexPath];
-//	if (total) {
-//		reusableView.totalLabel.text = [NSString stringWithFormat:@"总分：%@分", total];
-//	}
-//	if (avgs) {
-//		reusableView.avgsLabel.text = [NSString stringWithFormat:@"平均分：%@分", avgs];
-//	}
-//	
-//	return reusableView;
-//}
 
-//- (void)collectionView:(UICollectionView *)collectionView willDisplaySupplementaryView:(UICollectionReusableView *)view forElementKind:(NSString *)elementKind atIndexPath:(NSIndexPath *)indexPath {
-//    [collectionView.collectionViewLayout invalidateLayout];
-//}
+#pragma mark - UISearchBarDelegate
 
+- (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar {
+	[searchBar setShowsCancelButton:YES animated:YES];
+}
+
+- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar {
+	[searchBar setShowsCancelButton:NO animated:YES];
+}
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {}
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+	[searchBar resignFirstResponder];
+	[self filterContentForSearchText:searchBar.text scope:nil];
+}
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
+	[searchBar resignFirstResponder];
+	if ([searchBar.text length] == 0) {
+		self.searchResults = [self.books mutableCopy];
+		[self.collectionView reloadData];
+	}
+}
+
+- (void)filterContentForSearchText:(NSString *)searchText scope:(NSString *)scope {
+	// [cd] 忽略大小写
+	NSPredicate *predicate = [NSPredicate predicateWithFormat:@"title CONTAINS[cd] %@", searchText];
+	self.searchResults = [[self.books filteredArrayUsingPredicate:predicate] mutableCopy];
+	[self.collectionView reloadData];
+}
 
 @end

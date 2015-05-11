@@ -25,6 +25,7 @@
     // Do any additional setup after loading the view.
 	
 	self.pageViewController = [self.childViewControllers firstObject];
+	self.navigationController.navigationBarHidden = YES;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
