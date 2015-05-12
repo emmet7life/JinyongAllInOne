@@ -10,6 +10,7 @@
 #import "BookPageViewController.h"
 #import "BookPageContentViewController.h"
 
+#import "EBook.h"
 
 @interface BookMasterViewController ()
 
@@ -25,7 +26,8 @@
     // Do any additional setup after loading the view.
 	
 	self.pageViewController = [self.childViewControllers firstObject];
-	[self.pageViewController setupWithFirstPage:0];
+	[self.pageViewController setupWithFirstPage:self.eBook.currentPage];
+	self.pageViewController.eBook = self.eBook;
 	self.navigationController.navigationBarHidden = YES;
 }
 

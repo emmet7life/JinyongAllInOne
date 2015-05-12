@@ -15,7 +15,7 @@
 		B313C2171B00890800F8484A /* 最熟悉的陌生人.txt in Resources */ = {isa = PBXBuildFile; fileRef = B313C2141B00890800F8484A /* 最熟悉的陌生人.txt */; };
 		B313C2191B0089B300F8484A /* Books.plist in Resources */ = {isa = PBXBuildFile; fileRef = B313C2181B0089B300F8484A /* Books.plist */; };
 		B313C21D1B00A6D000F8484A /* EBook.m in Sources */ = {isa = PBXBuildFile; fileRef = B313C21C1B00A6D000F8484A /* EBook.m */; };
-		B313C2201B00A86300F8484A /* EBookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B313C21F1B00A86300F8484A /* EBookModel.m */; };
+		B31E62921B01918300C08D9F /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B31E62911B01918300C08D9F /* CoreDataManager.m */; };
 		B35405451AE0E62F001E55F4 /* BookShelfCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B354053C1AE0E62F001E55F4 /* BookShelfCollectionView.m */; };
 		B35405471AE0E62F001E55F4 /* BookShelfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B35405401AE0E62F001E55F4 /* BookShelfViewController.m */; };
 		B35405481AE0E62F001E55F4 /* BookShelfCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B35405421AE0E62F001E55F4 /* BookShelfCollectionViewLayout.m */; };
@@ -98,8 +98,8 @@
 		B313C2181B0089B300F8484A /* Books.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Books.plist; sourceTree = "<group>"; };
 		B313C21B1B00A6D000F8484A /* EBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBook.h; sourceTree = "<group>"; };
 		B313C21C1B00A6D000F8484A /* EBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBook.m; sourceTree = "<group>"; };
-		B313C21E1B00A86300F8484A /* EBookModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBookModel.h; sourceTree = "<group>"; };
-		B313C21F1B00A86300F8484A /* EBookModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBookModel.m; sourceTree = "<group>"; };
+		B31E62901B01918300C08D9F /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		B31E62911B01918300C08D9F /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
 		B354053B1AE0E62F001E55F4 /* BookShelfCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookShelfCollectionView.h; sourceTree = "<group>"; };
 		B354053C1AE0E62F001E55F4 /* BookShelfCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookShelfCollectionView.m; sourceTree = "<group>"; };
 		B354053F1AE0E62F001E55F4 /* BookShelfViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookShelfViewController.h; sourceTree = "<group>"; };
@@ -186,8 +186,8 @@
 			children = (
 				B313C21B1B00A6D000F8484A /* EBook.h */,
 				B313C21C1B00A6D000F8484A /* EBook.m */,
-				B313C21E1B00A86300F8484A /* EBookModel.h */,
-				B313C21F1B00A86300F8484A /* EBookModel.m */,
+				B31E62901B01918300C08D9F /* CoreDataManager.h */,
+				B31E62911B01918300C08D9F /* CoreDataManager.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -335,10 +335,10 @@
 				B3AD1D6B1AE61F4E00FF0ABB /* BookMasterViewController.m */,
 				B3AD1D6E1AE61F4E00FF0ABB /* BookPageViewController.h */,
 				B3AD1D6F1AE61F4E00FF0ABB /* BookPageViewController.m */,
-				B3AD1D681AE61F4E00FF0ABB /* BookContentView.h */,
-				B3AD1D691AE61F4E00FF0ABB /* BookContentView.m */,
 				B3AD1D6C1AE61F4E00FF0ABB /* BookPageContentViewController.h */,
 				B3AD1D6D1AE61F4E00FF0ABB /* BookPageContentViewController.m */,
+				B3AD1D681AE61F4E00FF0ABB /* BookContentView.h */,
+				B3AD1D691AE61F4E00FF0ABB /* BookContentView.m */,
 				B313C1CF1B00783000F8484A /* BookNavBarView.h */,
 				B313C1D01B00783000F8484A /* BookNavBarView.m */,
 				B3AD1D661AE61F4E00FF0ABB /* BookContentDataSource.h */,
@@ -591,7 +591,7 @@
 				B3AD1D741AE61F4E00FF0ABB /* BookPageViewController.m in Sources */,
 				B36D25E51AA7F1ED00EB0424 /* main.m in Sources */,
 				B35405471AE0E62F001E55F4 /* BookShelfViewController.m in Sources */,
-				B313C2201B00A86300F8484A /* EBookModel.m in Sources */,
+				B31E62921B01918300C08D9F /* CoreDataManager.m in Sources */,
 				C998C1F61AE16EE900150D42 /* BookShelfCollectionViewCell.m in Sources */,
 				B36D25EB1AA7F1ED00EB0424 /* JinyongAllInOne.xcdatamodeld in Sources */,
 				B313C1D11B00783000F8484A /* BookNavBarView.m in Sources */,

@@ -12,6 +12,7 @@
 #import <SVProgressHUD/SVProgressHUD.h>
 
 #import "EBook.h"
+#import "CoreDataManager.h"
 
 @interface BookPageViewController ()
 
@@ -28,21 +29,24 @@
     [super awakeFromNib];
 	self.delegate = self;
 	self.dataSource = self;
-//	//从第一页开始计算页码，但是封面是第0页
-//	self.currentPageIndex = 0;
-//	self.templePageIndex = self.currentPageIndex;
+
 	self.maxPageCount = [[BookContentDataSource sharedInstance] maxPageCount];
-	
-//	EBook *book = [[EBook]];
 }
 
 - (void)setupWithFirstPage:(NSInteger)pageIndex {
+	//从第一页开始计算页码，但是封面是第0页
 	self.currentPageIndex = pageIndex;
 	self.templePageIndex = pageIndex;
 	// 设置书籍的第一页
 	[self setViewControllers:@[[self bookContentControllerAtIndex:pageIndex]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:^(BOOL finished) {
 		
 	}];
+}
+
+- (void)setCurrentPageIndex:(NSInteger)currentPageIndex {
+	_currentPageIndex = currentPageIndex;
+	self.eBook.currentPage = currentPageIndex;
+	[[CoreDataManager sharedInstance] updateEBookWithModel:self.eBook];
 }
 
 #pragma mark -

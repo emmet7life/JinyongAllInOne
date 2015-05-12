@@ -16,6 +16,8 @@
 
 @property (strong, nonatomic) BookNavBarView *navView;
 
+@property (weak, nonatomic) IBOutlet UILabel *pageLabel;
+
 @end
 
 @implementation BookPageContentViewController
@@ -29,6 +31,8 @@
 	self.navView = nav;
 	UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapContent:)];
 	[self.view addGestureRecognizer:tapGesture];
+	
+	self.pageLabel.text = [NSString stringWithFormat:@"第  %zd  页", self.pageIndex];
 }
 
 - (void)viewDidLayoutSubviews {

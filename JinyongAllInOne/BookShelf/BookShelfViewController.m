@@ -13,6 +13,11 @@
 #import "BookMasterViewController.h"
 #import "BookContentDataSource.h"
 
+#import <SVProgressHUD/SVProgressHUD.h>
+
+#import "EBook.h"
+#import "CoreDataManager.h"
+
 @interface BookShelfViewController ()
 
 @property (weak, nonatomic) IBOutlet BookShelfCollectionView *collectionView;
@@ -73,9 +78,27 @@
 #pragma mark - UICollectionViewDelegate
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-	[[BookContentDataSource sharedInstance] setupWithBookName:self.books[indexPath.item][@"title"]];
 	BookMasterViewController *master = [self.storyboard instantiateViewControllerWithIdentifier:@"BookMasterViewController"];
-	[self presentViewController:master animated:YES completion:NULL];
+	[SVProgressHUD showWithStatus:@"正在读取数据"];
+	
+	NSDictionary *book = self.searchResults[indexPath.item];
+	EBook *eBook = [[CoreDataManager sharedInstance] fetchEBookWithBookIdentifier:book[@"id"]];
+	if (eBook == nil) {
+		eBook = [[CoreDataManager sharedInstance] insertEBookWithIdentifier:book];
+	}
+	master.eBook = eBook;
+	
+	__weak typeof(self) weakSelf = self;
+	dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+		[[BookContentDataSource sharedInstance] setupWithBookName:weakSelf.books[indexPath.item][@"title"]];
+		if ([weakSelf.searchBar isFirstResponder]) {
+			[weakSelf.searchBar resignFirstResponder];
+		}
+		[weakSelf presentViewController:master animated:YES completion:^{
+			[SVProgressHUD dismiss];
+		}];
+	});
+	
 }
 
 

@@ -11,7 +11,9 @@
 
 typedef NS_ENUM(NSInteger, BookType) {
 	BookTypeWuxia = 0,
-	BookTypeYanqing
+	BookTypeYanqing,
+	BookTypeXuanhuan,
+	BookTypeKongbu
 };
 
 @interface EBook : NSManagedObject
@@ -51,5 +53,8 @@ typedef NS_ENUM(NSInteger, BookType) {
  *  @brief  书籍类型
  */
 @property (nonatomic) BookType type;
+
++ (NSString *)entityName;
+- (void)updateWithModel:(EBook *)model;
 
 @end
