@@ -796,7 +796,7 @@
 			baseConfigurationReference = D69C3B121D8B1599418FE81F /* Pods-JinyongAllInOne.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: 巍 李 (3FY29N5VF3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = JinyongAllInOne/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -811,7 +811,7 @@
 			baseConfigurationReference = 79C14252712467C92B1B033A /* Pods-JinyongAllInOne.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: 巍 李 (3FY29N5VF3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = JinyongAllInOne/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

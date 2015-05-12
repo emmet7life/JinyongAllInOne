@@ -26,8 +26,9 @@
     // Do any additional setup after loading the view.
 	
 	self.pageViewController = [self.childViewControllers firstObject];
-	[self.pageViewController setupWithFirstPage:self.eBook.currentPage];
 	self.pageViewController.eBook = self.eBook;
+	[self.pageViewController setupWithFirstPage:self.eBook.currentPage];
+	
 	self.navigationController.navigationBarHidden = YES;
 }
 

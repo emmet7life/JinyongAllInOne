@@ -34,13 +34,13 @@ typedef NS_ENUM(NSInteger, BookType) {
  *
  *  @brief  用户当前阅读页数
  */
-@property (nonatomic) NSUInteger currentPage;
+@property (assign, nonatomic) NSUInteger currentPage;
 /*!
  *  @author Megatron, 2015-05-11
  *
  *  @brief  书籍总页数
  */
-@property (nonatomic) NSUInteger maxPageCount;
+@property (assign, nonatomic) NSUInteger maxPageCount;
 /*!
  *  @author Megatron, 2015-05-11
  *
@@ -52,7 +52,7 @@ typedef NS_ENUM(NSInteger, BookType) {
  *
  *  @brief  书籍类型
  */
-@property (nonatomic) BookType type;
+@property (assign, nonatomic) BookType type;
 
 + (NSString *)entityName;
 - (void)updateWithModel:(EBook *)model;

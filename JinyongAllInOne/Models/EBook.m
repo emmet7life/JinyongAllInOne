@@ -22,6 +22,7 @@
 	return NSStringFromClass([self class]);
 }
 
+
 - (void)updateWithModel:(EBook *)model {
 	if (model.identifier != self.identifier) {
 		return;
